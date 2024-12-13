@@ -4,7 +4,7 @@
         <div class="l_footer_info_contents">
           <h1 class="l_footer-logo">
             <a href="index.html" class="l_footer-logo_link">
-              <img src="./images/dolphin-icon.svg" alt="会社ロゴ" class="l_footer-logo_icon" width="403" height="403">
+              <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>" alt="会社ロゴ" class="l_footer-logo_icon" width="403" height="403">
               <span class="l_footer-logo_txt">有限会社ドルフィン</span>
             </a>
           </h1>
@@ -20,7 +20,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./images/instagram-icon.svg" alt="" class="l_footer_sns" width="96" height="96">
+                <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/instagram-icon.svg"); ?>" alt="" class="l_footer_sns" width="96" height="96">
               </a>
             </div>
             <!-- /.l_footer_sns-wrapper -->
@@ -31,7 +31,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./images/facebook-icon.svg" alt="" class="l_footer_sns" width="96" height="96">
+                <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/facebook-icon.svg"); ?>" alt="" class="l_footer_sns" width="96" height="96">
               </a>
             </div>
             <!-- /.l_footer_sns-wrapper -->

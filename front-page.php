@@ -27,7 +27,7 @@
         <div class="top_kv-slideshow_slide swiper-slide">
           <img
             class="top_kv-slideshow_slide_img"
-            src="images/top_kv_img01.jpg"
+            src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/top_kv_img01.jpg"); ?>"
             alt=""
           />
         </div>
@@ -35,7 +35,7 @@
         <div class="top_kv-slideshow_slide swiper-slide">
           <img
             class="top_kv-slideshow_slide_img"
-            src="images/top_kv_img02.jpg"
+            src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/top_kv_img02.jpg"); ?>"
             alt=""
           />
         </div>
@@ -43,7 +43,7 @@
         <div class="top_kv-slideshow_slide swiper-slide">
           <img
             class="top_kv-slideshow_slide_img"
-            src="images/top_kv_img03.jpg"
+            src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/top_kv_img03.jpg"); ?>"
             alt=""
           />
         </div>
@@ -72,7 +72,7 @@
           <div class="top_service_contents">
             <div class="top_service_content-box js_top_service">
               <div class="top_service_content-box_img-wrapper top_service_content-box_img-wrapper__road">
-                <img src="./images/road-img.jpg" alt="交通誘導警備の様子" class="top_service_content-box_img" width="1198" height="864">
+                <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/road-img.jpg"); ?>" alt="交通誘導警備の様子" class="top_service_content-box_img" width="1198" height="864">
               </div>
               <!-- /.top_service_content-box_img-wrapper -->
               <div class="top_service_content top_service_content__road">
@@ -84,7 +84,7 @@
             <!-- /.top_service_content-box -->
             <div class="top_service_content-box js_top_service">
               <div class="top_service_content-box_img-wrapper top_service_content-box_img-wrapper__event">
-                <img src="./images/event-img.jpg" alt="イベント警備の様子" class="top_service_content-box_img" width="1200" height="800">
+                <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/event-img.jpg"); ?>" alt="イベント警備の様子" class="top_service_content-box_img" width="1200" height="800">
               </div>
               <!-- /.top_service_content-box_img-wrapper -->
               <div class="top_service_content top_service_content__event">
@@ -138,7 +138,7 @@
                   <a href="about.html" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
-                        <img src="./images/company-icon-b.svg" alt="会社概要アイコン" class="top_company_btn_icon" width="50" height="50">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/company-icon-b.svg"); ?>." alt="会社概要アイコン" class="top_company_btn_icon" width="50" height="50">
                       </div>
                       <!-- /.top_company_btn_icon-wrapper -->
                       <span class="btn_head">会社概要を見る</span>
@@ -163,7 +163,7 @@
                   <a href="history.html" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
-                        <img src="./images/history-b.svg" alt="沿革アイコン" class="top_company_btn_icon" width="50" height="50">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/history-b.svg"); ?>" alt="沿革アイコン" class="top_company_btn_icon" width="50" height="50">
                       </div>
                       <!-- /.top_company_btn_icon-wrapper -->
                       <span class="btn_head">沿革を見る</span>
@@ -188,7 +188,7 @@
                   <a href="training.html" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
-                        <img src="./images/training-icon-b.svg" alt="研修アイコン" class="top_company_btn_icon" width="64" height="64">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/training-icon-b.svg"); ?>" alt="研修アイコン" class="top_company_btn_icon" width="64" height="64">
                       </div>
                       <!-- /.top_company_btn_icon-wrapper -->
                       <span class="btn_head">研修を見る</span>
@@ -213,7 +213,7 @@
                   <a href="philosophy.html" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
-                        <img src="./images/philosophy-icon-b.svg" alt="企業理念・行動指針アイコン" class="top_company_btn_icon" width="64" height="64">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/philosophy-icon-b.svg"); ?>" alt="企業理念・行動指針アイコン" class="top_company_btn_icon" width="64" height="64">
                       </div>
                       <!-- /.top_company_btn_icon-wrapper -->
                       <span class="btn_head">企業理念・行動指針を見る</span>
@@ -312,7 +312,7 @@
               <a href="single-blog.html" class="m_article-item_link">
                 <div class="m_article-item_thumb-wrapper">
                   <img
-                    src="./images/blog-thumbnail.jpg"
+                    src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
                     alt="ブログサムネイル"
                     class="m_article-item_thumb" width="600" height="400"
                   />
@@ -335,7 +335,7 @@
               <a href="single-blog.html" class="m_article-item_link">
                 <div class="m_article-item_thumb-wrapper">
                   <img
-                    src="./images/blog-thumbnail.jpg"
+                    src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
                     alt="ブログサムネイル"
                     class="m_article-item_thumb" width="600" height="400"
                   />
@@ -358,7 +358,7 @@
               <a href="single-blog.html" class="m_article-item_link">
                 <div class="m_article-item_thumb-wrapper">
                   <img
-                    src="./images/blog-thumbnail.jpg"
+                    src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
                     alt="ブログサムネイル"
                     class="m_article-item_thumb" width="600" height="400"
                   />

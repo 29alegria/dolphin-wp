@@ -10,11 +10,11 @@
   />
   <meta name="format-detection" content="telephone=no" />
   <!-- favicon/web-clip-icon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="images/favicon-32x32.png" type="image/png" />
-  <link rel="icon" href="images/favicon-192x192.png" type="image/png" />
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.ico"); ?>" type="image/x-icon" />
+  <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon-32x32.png"); ?>" type="image/png" />
+  <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon-192x192.png"); ?>" type="image/png" />
+  <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.svg"); ?>" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/apple-touch-icon.png"); ?>" />
   <!-- ogp -->
   <meta property="og:site_name" content="有限会社ドルフィン" />
   <meta
@@ -49,7 +49,7 @@
     <div class="m_opening_content">
       <div class="m_opening_logo-wrapper js_opening-logo">
         <img
-          src="./images/dolphin-icon.svg"
+          src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>"
           alt="会社ロゴ"
           class="m_opening_logo"
         />        
@@ -68,7 +68,7 @@
   <header class="l_header">
     <h1 class="l_header-logo">
       <a href="index.html" class="l_header-logo_link">
-        <img src="./images/dolphin-icon.svg" alt="会社ロゴ" class="l_header-logo_icon" width="403" height="403">
+        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>" alt="会社ロゴ" class="l_header-logo_icon" width="403" height="403">
         <span class="l_header-logo_txt">有限会社ドルフィン</span>
       </a>
     </h1>
@@ -109,7 +109,7 @@
                 <a href="about.html" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
-                      <img src="./images/company-icon-b.svg" alt="会社概要アイコン" class="l_header-subnav_img" width="50" height="50">
+                      <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/company-icon-b.svg"); ?>" alt="会社概要アイコン" class="l_header-subnav_img" width="50" height="50">
                     </div>
                     <!-- /.l_header-subnav_img-wrapper -->
                     <span class="l_header-subnav_txt">会社概要</span>                    
@@ -123,7 +123,7 @@
                 <a href="history.html" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
-                      <img src="./images/history-b.svg" alt="沿革アイコン" class="l_header-subnav_img" width="50" height="50">
+                      <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/history-b.svg"); ?>" alt="沿革アイコン" class="l_header-subnav_img" width="50" height="50">
                     </div>
                     <!-- /.l_header-subnav_img-wrapper -->                    
                     <span class="l_header-subnav_txt">沿革</span>
@@ -137,7 +137,7 @@
                 <a href="training.html" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
-                      <img src="./images/training-icon-b.svg" alt="研修アイコン" class="l_header-subnav_img" width="64" height="64">
+                      <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/training-icon-b.svg"); ?>" alt="研修アイコン" class="l_header-subnav_img" width="64" height="64">
                     </div>
                     <!-- /.l_header-subnav_img-wrapper -->
                     <span class="l_header-subnav_txt">研修</span>                    
@@ -151,7 +151,7 @@
                 <a href="philosophy.html" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
-                      <img src="./images/philosophy-icon-b.svg" alt="企業理念・行動指針アイコン" class="l_header-subnav_img" width="64" height="64">
+                      <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/philosophy-icon-b.svg"); ?>" alt="企業理念・行動指針アイコン" class="l_header-subnav_img" width="64" height="64">
                     </div>
                     <!-- /.l_header-subnav_img-wrapper -->
                     <span class="l_header-subnav_txt">企業理念・行動指針</span>                    
@@ -181,7 +181,7 @@
           <a href="recruit.html" class="l_header-menu_cta__link">
             <div class="l_header-menu_cta_inner">
               <div class="l_header-menu_cta_img-wrapper">
-                <img src="./images/recruit-icon.svg" alt="採用アイコン" class="l_header-menu_cta_img" width="64" height="64">
+                <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/recruit-icon.svg"); ?>" alt="採用アイコン" class="l_header-menu_cta_img" width="64" height="64">
               </div>
               <!-- /.l_header-menu_cta_img-wrapper -->
               <p class="l_header-menu_cta_head">採用情報</p>              
@@ -194,7 +194,7 @@
           <a href="contact.html" class="l_header-menu_cta__link">
             <div class="l_header-menu_cta_inner">
               <div class="l_header-menu_cta_img-wrapper">
-                <img src="./images/mail-icon-w.svg" alt="メールアイコン" class="l_header-menu_cta_img" width="64" height="64">
+                <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/mail-icon-w.svg"); ?>" alt="メールアイコン" class="l_header-menu_cta_img" width="64" height="64">
               </div>
               <!-- /.l_header-menu_cta_img-wrapper -->
               <p class="l_header-menu_cta_head">お問い合わせ</p>               
@@ -215,6 +215,6 @@
   </header>
 
   <button class="m_page-top js_page-top">
-    <img src="./images/up-icon.svg" alt="ページ上部に移動する" class="m_page-top_img" />
+    <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/up-icon.svg"); ?>" alt="ページ上部に移動する" class="m_page-top_img" />
   </button>
   <!-- /.m_page-top -->
