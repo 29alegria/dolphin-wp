@@ -25,7 +25,7 @@ function add_styles() {
   wp_enqueue_style(
     'main_style',
     get_template_directory_uri() . '/assets/styles/style.css',
-    array('reset_style'),
+    array('reset_style', "swiper_style"),
     '1.0'
   );
 }
