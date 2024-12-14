@@ -16,6 +16,12 @@
     name="description"
     content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。"
   />
+  <?php elseif (is_page("about")) : ?>
+  <title>会社情報 | 有限会社ドルフィン - 基本情報と主要取引先</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。"
+  />
   <?php elseif (is_page("blog")) : ?>
   <title>ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声</title>
   <meta
