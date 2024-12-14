@@ -22,6 +22,12 @@
     name="description"
     content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。"
   />
+  <?php elseif (is_page("history")) : ?>
+  <title>沿革 | 有限会社ドルフィン - 会社の歴史と成長の歩み・実績</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。"
+  />
   <?php elseif (is_page("blog")) : ?>
   <title>ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声</title>
   <meta
