@@ -1,16 +1,6 @@
 <?php get_header(); ?>
 
-  <div class="m_kv" id="top">
-    <div class="m_kv-inner l_container-lg">
-      <div class="m_kv-box">
-        <h1 class="m_kv-title">事業内容</h1>
-        <p class="m_kv-title_sub">SERVICE</p>
-      </div>
-      <!-- /.m_kv-box -->
-    </div>
-    <!-- /.m_kv-inner -->
-  </div>
-  <!-- /.m_kv -->
+<?php get_template_part("m-kv"); ?>
 
   <nav class="m_breadcrumb l_container-lg">
     <ul>

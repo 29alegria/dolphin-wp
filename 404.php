@@ -1,16 +1,6 @@
 <?php get_header(); ?>
 
-  <div class="m_kv" id="top">
-    <div class="m_kv-inner l_container-lg">
-      <div class="m_kv-box">
-        <h1 class="m_kv-title">404</h1>
-        <p class="m_kv-title_sub">404 NOT FOUND</p>
-      </div>
-      <!-- /.m_kv-box -->
-    </div>
-    <!-- /.m_kv-inner -->
-  </div>
-  <!-- /.m_kv -->
+<?php get_template_part("m-kv"); ?>
 
   <main class="l_main">
     <div class="l_contents">
