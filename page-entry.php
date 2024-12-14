@@ -13,7 +13,7 @@
   <!-- /.m_kv -->
 
   <main class="l_main">
-    <div class="l_contents">
+    <div class="l_contents-sm">
       <div class="l_container-sm">
         <div class="m_section-title">
           <h2 class="m_section-title_txt">エントリーフォーム</h2>

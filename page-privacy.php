@@ -13,7 +13,7 @@
   <!-- /.m_kv -->
 
   <main class="l_main">
-    <div class="l_contents">
+    <div class="l_contents-sm">
       <div class="l_container-sm">
         <p class="privacy_desc">有限会社ドルフィン（以下「当社」）は、お客様の個人情報の重要性を深く認識し、その適切な取り扱いを確保するため、以下の方針に基づき個人情報の保護を推進いたします。</p>
         <div class="privacy_content">
