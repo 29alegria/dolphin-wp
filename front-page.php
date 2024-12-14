@@ -242,7 +242,7 @@
       <!-- /.l_contents -->
     </section>
 
-    <?php get_template_part("cta-recruit"); ?>
+    <?php get_template_part("cta-contact"); ?>
 
     <section class="top_access js_section-title_trigger">
       <div class="l_contents">
@@ -297,7 +297,7 @@
       <!-- /.l_contents -->
     </section>
 
-    <?php get_template_part("cta-contact"); ?>
+    <?php get_template_part("cta-recruit"); ?>
     
     <section class="top_blog js_section-title_trigger">
       <div class="l_contents">

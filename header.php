@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php 
+  if (is_front_page()) : ?>
   <title>有限会社ドルフィン | 千葉県市川市の交通誘導警備・イベント警備</title>
   <meta
     name="description"
     content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。"
   />
+  <?php elseif(is_page("blog")) : ?>
+  <title>ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンのブログ一覧ページ。交通誘導警備やイベント警備のお役立ち情報に加え、現場で活躍する先輩隊員の声をご紹介します。"
+  />
+  <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
   <!-- favicon/web-clip-icon -->
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.ico"); ?>" type="image/x-icon" />
