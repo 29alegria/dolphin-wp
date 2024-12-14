@@ -99,3 +99,9 @@ function get_sns_link($platform) {
   return isset($sns_links[$platform]) ? $sns_links[$platform] : '#';
 }
 
+// 外部リンクを返すカスタム関数
+function get_external_link() {
+  return 'https://www.chikeikyo.or.jp/';
+}
+
+

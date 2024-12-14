@@ -83,7 +83,7 @@
             <tr>
               <th>加入団体</th>
               <td>
-                <a href="#">
+                <a href="<?php echo esc_url(get_external_link()); ?>" target="_blank" rel="noopener noreferrer">
                   千葉県警備業協会
                   <div class="about-info-link_icon-wrapper">
                     <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/link-icon.svg"); ?>" alt="外部リンクアイコン" class="about-info-link_icon" width="32" height="32">
