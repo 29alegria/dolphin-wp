@@ -43,7 +43,7 @@
           <nav class="l_footer-cta_menu">
             <ul class="l_footer-cta_list">
               <li class="l_footer-cta_item">
-                <a href="recruit.html" class="l_footer-cta_link">
+                <a href="<?php echo esc_url(home_url("/recruit")); ?>" class="l_footer-cta_link">
                   <span class="l_footer-cta_txt">採用情報</span>
                   <div class="m_arrow-wrapper">
                     <div class="m_arrow__round">
@@ -55,7 +55,7 @@
                 </a>
               </li>
               <li class="l_footer-cta_item">
-                <a href="contact.html" class="l_footer-cta_link">
+                <a href="<?php echo esc_url(home_url("/contact")) ?>contact.html" class="l_footer-cta_link">
                   <span class="l_footer-cta_txt">お問い合わせ</span>
                   <div class="m_arrow-wrapper">
                     <div class="m_arrow__round">

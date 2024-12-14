@@ -45,6 +45,7 @@
   <?php wp_head(); ?>
 </head>
 <body class="js_body">
+<?php if(is_front_page()) : ?>
   <div class="m_opening js_opening">
     <div class="m_opening_content">
       <div class="m_opening_logo-wrapper js_opening-logo">
@@ -64,19 +65,30 @@
       </div>
     </div>
   </div>
-
+<?php endif; ?>
   <header class="l_header">
+    <?php 
+    if (is_front_page()) :
+    ?>
     <h1 class="l_header-logo">
-      <a href="index.html" class="l_header-logo_link">
+      <a href="<?php echo esc_url(home_url()); ?>" class="l_header-logo_link">
         <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>" alt="会社ロゴ" class="l_header-logo_icon" width="403" height="403">
         <span class="l_header-logo_txt">有限会社ドルフィン</span>
       </a>
     </h1>
+    <?php else : ?>
+    <p class="l_header-logo">
+      <a href="<?php echo esc_url(home_url()); ?>" class="l_header-logo_link">
+        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>" alt="会社ロゴ" class="l_header-logo_icon" width="403" height="403">
+        <span class="l_header-logo_txt">有限会社ドルフィン</span>
+      </a>
+    </p>
+    <?php endif; ?>
     <div class="l_header-menu js_navigation">
       <nav class="l_header-nav">
         <ul class="l_header-nav_list">
           <li class="l_header-nav_item">
-            <a href="index.html" class="l_header-nav_link">
+            <a href="<?php echo esc_url(home_url()); ?>" class="l_header-nav_link">
               <span class="l_header-nav_head">トップ</span>
               <div class="m_arrow-wrapper">
                 <div class="m_arrow__round">
@@ -86,7 +98,7 @@
             </a>
           </li>
           <li class="l_header-nav_item">
-            <a href="service.html" class="l_header-nav_link">
+            <a href="<?php echo esc_url(home_url("/service")); ?>" class="l_header-nav_link">
               <span class="l_header-nav_head">事業内容</span>
               <div class="m_arrow-wrapper">
                 <div class="m_arrow__round">
@@ -106,7 +118,7 @@
             </div>
             <ul class="l_header-subnav_list">
               <li class="l_header-subnav_item">
-                <a href="about.html" class="l_header-subnav_link">
+                <a href="<?php echo esc_url(home_url("/about")); ?>" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
                       <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/company-icon-b.svg"); ?>" alt="会社概要アイコン" class="l_header-subnav_img" width="50" height="50">
@@ -120,7 +132,7 @@
                 </a>
               </li>
               <li class="l_header-subnav_item">
-                <a href="history.html" class="l_header-subnav_link">
+                <a href="<?php echo esc_url(home_url("/history")); ?>" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
                       <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/history-b.svg"); ?>" alt="沿革アイコン" class="l_header-subnav_img" width="50" height="50">
@@ -134,7 +146,7 @@
                 </a>
               </li>
               <li class="l_header-subnav_item">
-                <a href="training.html" class="l_header-subnav_link">
+                <a href="<?php echo esc_url(home_url("/training")); ?>" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
                       <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/training-icon-b.svg"); ?>" alt="研修アイコン" class="l_header-subnav_img" width="64" height="64">
@@ -148,7 +160,7 @@
                 </a>
               </li>
               <li class="l_header-subnav_item">
-                <a href="philosophy.html" class="l_header-subnav_link">
+                <a href="<?php echo esc_url(home_url("/philosophy")); ?>" class="l_header-subnav_link">
                   <div class="l_header-submenu_head">
                     <div class="l_header-subnav_img-wrapper">
                       <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/philosophy-icon-b.svg"); ?>" alt="企業理念・行動指針アイコン" class="l_header-subnav_img" width="64" height="64">
@@ -165,7 +177,7 @@
             </ul>
           </li>
           <li class="l_header-nav_item">
-            <a href="blog.html" class="l_header-nav_link">
+            <a href="<?php echo esc_url(home_url("/blog")); ?>" class="l_header-nav_link">
               <span class="l_header-nav_head">警備ブログ</span>
               <div class="m_arrow-wrapper">
                 <div class="m_arrow__round">
@@ -178,7 +190,7 @@
       </nav>
       <div class="l_header-menu_ctas">
         <div class="l_header-menu_cta l_header-menu_cta__recruit">
-          <a href="recruit.html" class="l_header-menu_cta__link">
+          <a href="<?php echo esc_url(home_url("/recruit")); ?>" class="l_header-menu_cta__link">
             <div class="l_header-menu_cta_inner">
               <div class="l_header-menu_cta_img-wrapper">
                 <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/recruit-icon.svg"); ?>" alt="採用アイコン" class="l_header-menu_cta_img" width="64" height="64">
@@ -191,7 +203,7 @@
         </div>
         <!-- /.l_header-menu_cta -->
         <div class="l_header-menu_cta l_header-menu_cta__contact">
-          <a href="contact.html" class="l_header-menu_cta__link">
+          <a href="<?php echo esc_url(home_url("/contact")); ?>" class="l_header-menu_cta__link">
             <div class="l_header-menu_cta_inner">
               <div class="l_header-menu_cta_img-wrapper">
                 <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/mail-icon-w.svg"); ?>" alt="メールアイコン" class="l_header-menu_cta_img" width="64" height="64">

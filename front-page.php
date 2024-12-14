@@ -97,7 +97,7 @@
           </div>
           <!-- /.top_service_contents -->
           <div class="top-service_btn-wrapper">
-            <a href="service.html" class="m_btn m_btn__right-arrow">
+            <a href="<?php echo esc_url(home_url("/service")); ?>" class="m_btn m_btn__right-arrow">
               <span class="btn_head">事業内容を詳しくみる</span>
               <div class="m_arrow-wrapper">
                 <div class="m_arrow__round">
@@ -135,7 +135,7 @@
                 <!-- /.top_company-title -->
                 <p class="top_company_menu-desc">当社の基本的な情報と主要取引先について</p>
                 <div class="top-company_btn-wrapper">
-                  <a href="about.html" class="m_btn m_btn__right-arrow">
+                  <a href="<?php echo esc_url(home_url("/about")); ?>" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
                         <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/company-icon-b.svg"); ?>." alt="会社概要アイコン" class="top_company_btn_icon" width="50" height="50">
@@ -160,7 +160,7 @@
                 <!-- /.top_company-title -->
                 <p class="top_company_menu-desc">当社の歴史や実績について</p>
                 <div class="top-company_btn-wrapper">
-                  <a href="history.html" class="m_btn m_btn__right-arrow">
+                  <a href="<?php echo esc_url(home_url("/history")); ?>" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
                         <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/history-b.svg"); ?>" alt="沿革アイコン" class="top_company_btn_icon" width="50" height="50">
@@ -185,7 +185,7 @@
                 <!-- /.top_company-title -->
                 <p class="top_company_menu-desc">当社の研修内容について</p>
                 <div class="top-company_btn-wrapper">
-                  <a href="training.html" class="m_btn m_btn__right-arrow">
+                  <a href="<?php echo esc_url(home_url("/training")); ?>" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
                         <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/training-icon-b.svg"); ?>" alt="研修アイコン" class="top_company_btn_icon" width="64" height="64">
@@ -210,7 +210,7 @@
                 <!-- /.top_company-title -->
                 <p class="top_company_menu-desc">当社の大切にしている理念・指針について</p>
                 <div class="top-company_btn-wrapper">
-                  <a href="philosophy.html" class="m_btn m_btn__right-arrow">
+                  <a href="<?php echo esc_url(home_url("/philosophy")); ?>" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
                         <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/philosophy-icon-b.svg"); ?>" alt="企業理念・行動指針アイコン" class="top_company_btn_icon" width="64" height="64">
@@ -380,7 +380,7 @@
           </div>
           <!-- /.article-list -->
           <div class="top-blog_btn-wrapper">
-            <a href="blog.html" class="m_btn m_btn__right-arrow">
+            <a href="<?php echo esc_url(home_url("/blog")); ?>" class="m_btn m_btn__right-arrow">
               <span class="btn_head">ブログの一覧をみる</span>
               <div class="m_arrow-wrapper">
                 <div class="m_arrow__round">
