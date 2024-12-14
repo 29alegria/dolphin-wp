@@ -15,6 +15,12 @@
       <li>現在のページ</li>
     </ul>
   </nav>
+  <?php if (function_exists('bcn_display')) {
+    echo '<nav class="breadcrumb">';
+    bcn_display();
+    echo '</nav>';
+} ?>
+
   
   <main class="l_main">
     <section class="about_section">
