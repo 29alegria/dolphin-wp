@@ -2659,7 +2659,7 @@ iframe {
     display: block;
     position: sticky;
     top: 90px;
-    left: 0;
+    right: 0;
   }
 }
 

@@ -1,5 +1,8 @@
 <?php
 
+// アイキャッチ画像の有効化
+add_theme_support('post-thumbnails');
+
 // cssの読み込み
 add_action('wp_enqueue_scripts', 'add_styles');
 function add_styles() {

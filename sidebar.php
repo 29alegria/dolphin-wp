@@ -5,106 +5,39 @@
             </div>
             <!-- /.m_sidebar-box_head -->
             <div class="m_sidebar-box_contents">
-              <article class="m_sidebar-post">
-                <a href="single-blog.html" class="m_sidebar-post_link">
-                  <div class="m_sidebar-post_thumb-wrapper">
-                    <img
-                      width="600"
-                      height="400"
-                      src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                      alt="ブログサムネイル"
-                      class="m_sidebar-post_thumb"
-                    />
-                  </div>
-                  <!-- /.m_post_thumb-wrapper -->
-                  <div class="m_sidebar-post_content">
-                    <div class="m_sidebar-post_meta">
-                      <time class="m_sidebar-post_meta-date">2024.12.10</time>
-                      <span class="m_sidebar-post_meta-cat">カテゴリー</span>
-                    </div>
-                    <!-- ./m_post_meta -->
-                    <h2 class="m_sidebar-post_title">
-                      未経験から今すぐ始められる！交通誘導警備の魅力とは？未経験者でも安心のステップアップ術
-                    </h2>
-                  </div>
-                  <!-- /.m_post_content -->
-                </a>
-              </article>
-              <article class="m_sidebar-post">
-                <a href="single-blog.html" class="m_sidebar-post_link">
-                  <div class="m_sidebar-post_thumb-wrapper">
-                    <img
-                      width="600"
-                      height="400"
-                      src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                      alt="ブログサムネイル"
-                      class="m_sidebar-post_thumb"
-                    />
-                  </div>
-                  <!-- /.m_post_thumb-wrapper -->
-                  <div class="m_sidebar-post_content">
-                    <div class="m_sidebar-post_meta">
-                      <time class="m_sidebar-post_meta-date">2024.12.10</time>
-                      <span class="m_sidebar-post_meta-cat">カテゴリー</span>
-                    </div>
-                    <!-- ./m_post_meta -->
-                    <h2 class="m_sidebar-post_title">
-                      未経験から今すぐ始められる！交通誘導警備の魅力とは？未経験者でも安心のステップアップ術
-                    </h2>
-                  </div>
-                  <!-- /.m_post_content -->
-                </a>
-              </article>
-              <article class="m_sidebar-post">
-                <a href="single-blog.html" class="m_sidebar-post_link">
-                  <div class="m_sidebar-post_thumb-wrapper">
-                    <img
-                      width="600"
-                      height="400"
-                      src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                      alt="ブログサムネイル"
-                      class="m_sidebar-post_thumb"
-                    />
-                  </div>
-                  <!-- /.m_post_thumb-wrapper -->
-                  <div class="m_sidebar-post_content">
-                    <div class="m_sidebar-post_meta">
-                      <time class="m_sidebar-post_meta-date">2024.12.10</time>
-                      <span class="m_sidebar-post_meta-cat">カテゴリー</span>
-                    </div>
-                    <!-- ./m_post_meta -->
-                    <h2 class="m_sidebar-post_title">
-                      未経験から今すぐ始められる！交通誘導警備の魅力とは？未経験者でも安心のステップアップ術
-                    </h2>
-                  </div>
-                  <!-- /.m_post_content -->
-                </a>
-              </article>
-              <article class="m_sidebar-post">
-                <a href="single-blog.html" class="m_sidebar-post_link">
-                  <div class="m_sidebar-post_thumb-wrapper">
-                    <img
-                      width="600"
-                      height="400"
-                      src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                      alt="ブログサムネイル"
-                      class="m_sidebar-post_thumb"
-                    />
-                  </div>
-                  <!-- /.m_post_thumb-wrapper -->
-                  <div class="m_sidebar-post_content">
-                    <div class="m_sidebar-post_meta">
-                      <time class="m_sidebar-post_meta-date">2024.12.10</time>
-                      <span class="m_sidebar-post_meta-cat">カテゴリー</span>
-                    </div>
-                    <!-- ./m_post_meta -->
-                    <h2 class="m_sidebar-post_title">
-                      未経験から今すぐ始められる！交通誘導警備の魅力とは？未経験者でも安心のステップアップ術
-                    </h2>
-                  </div>
-                  <!-- /.m_post_content -->
-                </a>
-              </article>
+
+            <?php
+      $args = array(
+        'post_type' => 'post', //カスタム投稿タイプを指定
+        'posts_per_page' => 4, //表示する記事数
+      );
+
+      $the_query = new WP_Query($args);
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+
+          $cat = get_the_category();
+          $cat_name = $cat[0]->name;
+      ?>
+          <article class="m_sidebar-post">
+            <a href="<?php the_permalink(); ?>" class="m_sidebar-post_link">
+              <!-- /.m_post_thumb-wrapper -->
+              <div class="m_sidebar-post_content">
+                <div class="m_sidebar-post_meta">
+                  <time class="m_sidebar-post_meta-date"><?php the_time('Y.m.d'); ?></time>
+                  <span class="m_sidebar-post_meta-cat"><?php echo esc_html($cat_name); ?></span>
+                </div>
+                <!-- ./m_post_meta -->
+                <h2 class="m_sidebar-post_title">
+                  <?php the_title(); ?>
+                </h2>
+              </div>
+              <!-- /.m_post_content -->
+            </a>
+          </article>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
 
             </div>
             <!-- /.m_sidebar-box_head -->
