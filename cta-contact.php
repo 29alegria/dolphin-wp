@@ -12,7 +12,7 @@
           </div>
           <!-- /.m_cta__form_content -->
           <div class="m_form_btn-wrapper">
-            <a href="<?php echo esc_utl(home_url("/contact")); ?>" class="m_btn m_form_btn">
+            <a href="<?php echo esc_url(home_url("/contact")); ?>" class="m_btn m_form_btn">
               まずは無料で相談する
             </a>
           </div>
