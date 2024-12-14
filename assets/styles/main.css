@@ -2308,16 +2308,33 @@ iframe {
   box-shadow: 2px 2px 4px 0px rgba(170, 170, 170, 0.16);
   background-color: var(--white-color);
   margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .m_article-item_link {
+    display: flex;
+  }
 }
 
 .m_article-item_thumb-wrapper {
   overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .m_article-item_thumb-wrapper {
+    width: 272px;
+    flex-shrink: 0;
+  }
 }
 
 .m_article-item_thumb {
   transition: transform 0.34s;
   /* ホバー時のサムネイル拡大下地。 */
 }
+
+
 
 @media screen and (min-width: 768px) {
   .m_article-item:hover .m_article-item_thumb {

@@ -308,77 +308,54 @@
           </div>
           <!-- /.top_section_title -->
           <div class="m_article-list m_article-list__col-3">
-            <article class="m_article-item">
-              <a href="single-blog.html" class="m_article-item_link">
-                <div class="m_article-item_thumb-wrapper">
-                  <img
-                    src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                    alt="ブログサムネイル"
-                    class="m_article-item_thumb" width="600" height="400"
-                  />
-                </div>
-                <!-- /.m_article-item_thumb-wrapper -->
-                <div class="m_article-item_txt">
-                  <div class="m_article-item_meta">
-                    <time class="m_article-item_meta-date">0000.00.00</time>
-                    <span class="m_article-item_meta-cat">カテゴリー</span>
-                  </div>
-                  <!-- /.m_article-item_meta -->
-                  <h3 class="m_article-item_title">
-                    未経験から今すぐ始められる！交通誘導警備の魅力とは？
-                  </h3>
-                </div>
-                <!-- /.m_article-item_txt -->
-              </a>
-            </article>
-            <article class="m_article-item">
-              <a href="single-blog.html" class="m_article-item_link">
-                <div class="m_article-item_thumb-wrapper">
-                  <img
-                    src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                    alt="ブログサムネイル"
-                    class="m_article-item_thumb" width="600" height="400"
-                  />
-                </div>
-                <!-- /.m_article-item_thumb-wrapper -->
-                <div class="m_article-item_txt">
-                  <div class="m_article-item_meta">
-                    <time class="m_article-item_meta-date">0000.00.00</time>
-                    <span class="m_article-item_meta-cat">カテゴリー</span>
-                  </div>
-                  <!-- /.m_article-item_meta -->
-                  <h3 class="m_article-item_title">
-                    未経験から今すぐ始められる！交通誘導警備の魅力とは？
-                  </h3>
-                </div>
-                <!-- /.m_article-item_txt -->
-              </a>
-            </article>
-            <article class="m_article-item">
-              <a href="single-blog.html" class="m_article-item_link">
-                <div class="m_article-item_thumb-wrapper">
-                  <img
-                    src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/blog-thumbnail.jpg"); ?>"
-                    alt="ブログサムネイル"
-                    class="m_article-item_thumb" width="600" height="400"
-                  />
-                </div>
-                <!-- /.m_article-item_thumb-wrapper -->
-                <div class="m_article-item_txt">
-                  <div class="m_article-item_meta">
-                    <time class="m_article-item_meta-date">0000.00.00</time>
-                    <span class="m_article-item_meta-cat">カテゴリー</span>
-                  </div>
-                  <!-- /.m_article-item_meta -->
-                  <h3 class="m_article-item_title">
-                    未経験から今すぐ始められる！交通誘導警備の魅力とは？
-                  </h3>
-                </div>
-                <!-- /.m_article-item_txt -->
-              </a>
-            </article>
-          </div>
-          <!-- /.article-list -->
+                <?php
+                // 新着記事3件を取得
+                $recent_posts = new WP_Query(array(
+                    'post_type' => 'post', // 投稿タイプ
+                    'posts_per_page' => 3, // 取得件数
+                    'orderby' => 'date', // 並び順
+                    'order' => 'DESC', // 降順
+                ));
+
+                if ($recent_posts->have_posts()) :
+                    while ($recent_posts->have_posts()) : $recent_posts->the_post();
+                ?>
+                        <article class="m_article-item">
+                            <a href="<?php the_permalink(); ?>" class="m_article-item_link">
+                                <div class="m_article-item_thumb-wrapper">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title_attribute(); ?>" class="m_article-item_thumb" width="600" height="400" />
+                                    <?php else : ?>
+                                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/blog-thumbnail.jpg'); ?>" alt="デフォルトサムネイル" class="m_article-item_thumb" width="600" height="400" />
+                                    <?php endif; ?>
+                                </div>
+                                <!-- /.m_article-item_thumb-wrapper -->
+
+                                <div class="m_article-item_txt">
+                                    <div class="m_article-item_meta">
+                                        <time class="m_article-item_meta-date"><?php echo get_the_date('Y.m.d'); ?></time>
+                                        <span class="m_article-item_meta-cat">
+                                            <?php
+                                            $categories = get_the_category();
+                                            echo !empty($categories) ? esc_html($categories[0]->name) : 'カテゴリーなし';
+                                            ?>
+                                        </span>
+                                    </div>
+                                    <!-- /.m_article-item_meta -->
+                                    <h3 class="m_article-item_title"><?php the_title(); ?></h3>
+                                </div>
+                                <!-- /.m_article-item_txt -->
+                            </a>
+                        </article>
+                <?php
+                    endwhile;
+                    wp_reset_postdata(); // クエリをリセット
+                else :
+                    echo '<p>記事がありません。</p>';
+                endif;
+                ?>
+            </div>
+            <!-- /.article-list -->
           <div class="top-blog_btn-wrapper">
             <a href="<?php echo esc_url(home_url("/blog")); ?>" class="m_btn m_btn__right-arrow">
               <span class="btn_head">ブログの一覧をみる</span>
