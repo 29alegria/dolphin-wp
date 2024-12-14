@@ -48,7 +48,7 @@
           />
         </div>
         <!-- /.top_kv-slideshow_slide -->
-        <div class="top_kv-slideshow_slide swiper-slide">
+        <div class="top_kv-slideshow_slide top_kv-slideshow_slide-last swiper-slide">
           <img
             class="top_kv-slideshow_slide_img"
             src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/top_kv_img04.jpg"); ?>"

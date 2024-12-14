@@ -1479,6 +1479,12 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .top_kv-slideshow_slide-last {
+    display: none;
+  }
+}
+
 .top_kv-slideshow_slide_img {
   object-fit: cover;
   height: 100%;
