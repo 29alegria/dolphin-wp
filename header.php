@@ -10,7 +10,13 @@
     name="description"
     content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。"
   />
-  <?php elseif(is_page("blog")) : ?>
+  <?php elseif (is_page("service")) : ?>
+  <title>事業内容 | 有限会社ドルフィン - 千葉県市川市の交通誘導警備・イベント警備</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。"
+  />
+  <?php elseif (is_page("blog")) : ?>
   <title>ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声</title>
   <meta
     name="description"
