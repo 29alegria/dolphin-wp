@@ -70,6 +70,12 @@
     name="description"
     content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。"
   />
+  <?php elseif (is_page("contact")) : ?>
+  <title>ページが見つかりません | 有限会社ドルフィン</title>
+  <meta
+  name="description"
+  content="お探しのページが見つかりません。有限会社ドルフィンのサイトマップやトップページから目的のページをお探しください。"
+  />
   <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
   <!-- favicon/web-clip-icon -->
