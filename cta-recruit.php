@@ -10,7 +10,7 @@
           />警備の仕事にご興味のある方は、ぜひお気軽にご応募ください。
         </p>
         <div class="m_recruit_btn-wrapper">
-          <a href="recruit.html" class="m_btn m_recruit_btn m_btn__right-arrow">
+          <a href="<?php echo esc_url(home_url("/recruit")); ?>" class="m_btn m_recruit_btn m_btn__right-arrow">
             <span class="btn_head">採用情報を見る</span>
             <div class="m_arrow-wrapper">
               <div class="m_arrow__round">
