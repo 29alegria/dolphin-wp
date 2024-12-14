@@ -3,7 +3,7 @@
       <div class="l_footer_info">
         <div class="l_footer_info_contents">
           <h1 class="l_footer-logo">
-            <a href="index.html" class="l_footer-logo_link">
+            <a href="<?php echo esc_url(home_url()); ?>" class="l_footer-logo_link">
               <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>" alt="会社ロゴ" class="l_footer-logo_icon" width="403" height="403">
               <span class="l_footer-logo_txt">有限会社ドルフィン</span>
             </a>
@@ -55,7 +55,7 @@
                 </a>
               </li>
               <li class="l_footer-cta_item">
-                <a href="<?php echo esc_url(home_url("/contact")) ?>contact.html" class="l_footer-cta_link">
+                <a href="<?php echo esc_url(home_url("/contact")); ?>" class="l_footer-cta_link">
                   <span class="l_footer-cta_txt">お問い合わせ</span>
                   <div class="m_arrow-wrapper">
                     <div class="m_arrow__round">
@@ -67,7 +67,7 @@
                 </a>
               </li>
               <li class="l_footer-cta_item">
-                <a href="privacy.html" class="l_footer-cta_link">
+                <a href="<?php echo esc_url(home_url("/privacy")); ?>" class="l_footer-cta_link">
                   <span class="l_footer-cta_txt">個人情報保護方針</span>
                   <div class="m_arrow-wrapper">
                     <div class="m_arrow__round">
@@ -103,7 +103,7 @@
         <div class="l_footer-menu_cta">
           <ul class="l_footer-menu_cta-list">
             <li class="l_footer-menu_cta-item">
-              <a href="recruit.html" class="l_footer-menu_cta-link">
+              <a href="<?php echo esc_url(home_url("/recruit")); ?>" class="l_footer-menu_cta-link">
                 <span class="l_footer-menu_cta-head l_footer-menu_cta-head__recruit">採用情報</span>
                 <!-- <span class="l_footer-menu_cta-sub">Recruit</span> -->
                 <div class="m_arrow-wrapper">
@@ -116,7 +116,7 @@
               </a>
             </li>
             <li class="l_footer-menu_cta-item">
-              <a href="contact.html" class="l_footer-menu_cta-link">
+              <a href="<?php echo esc_url(home_url("/contact")); ?>" class="l_footer-menu_cta-link">
                 <span class="l_footer-menu_cta-head l_footer-menu_cta-head__contact">お問い合わせ</span>
                 <!-- <span class="l_footer-menu_cta-sub">Contact</span> -->
                 <div class="m_arrow-wrapper">
@@ -129,7 +129,7 @@
               </a>
             </li>
             <li class="l_footer-menu_cta-item">
-              <a href="privacy.html" class="l_footer-menu_cta-link">
+              <a href="<?php echo esc_url(home_url("/privacy")); ?>" class="l_footer-menu_cta-link">
                 <span class="l_footer-menu_cta-head l_footer-menu_cta-head__privacy">個人情報保護方針</span>
                 <!-- <span class="l_footer-menu_cta-sub">Privacy Policy</span> -->
                 <div class="m_arrow-wrapper">
@@ -160,7 +160,7 @@
         <div class="l_footer-menu_lowlayer-page">
           <ul class="l_footer-menu_lowlayer-page-list">
             <li class="l_footer-menu_lowlayer-page-item">
-              <a href="service.html" class="l_footer-menu_lowlayer-page-link">
+              <a href="<?php echo esc_url(home_url("/service")); ?>" class="l_footer-menu_lowlayer-page-link">
                 <span class="l_footer-menu_lowlayer-page-head l_footer-menu_lowlayer-page-head__service">事業内容</span>
                 <!-- <span class="l_footer-menu_lowlayer-page-sub">Service</span> -->
                 <div class="m_arrow-wrapper">
@@ -180,7 +180,7 @@
               <!-- /.l_footer-menu_lowlayer-page-link -->
               <ul class="l_footer-menu_lowlayer-page-submenu-list">
                 <li class="l_footer-menu_lowlayer-page-submenu-item">
-                  <a href="about.html" class="l_footer-menu_lowlayer-page-submenu-link">
+                  <a href="<?php echo esc_url(home_url("/about")); ?>" class="l_footer-menu_lowlayer-page-submenu-link">
                     <span class="l_footer-menu_lowlayer-page-submenu-head">会社概要</span>
                     <div class="m_arrow-wrapper">
                       <div class="m_arrow m_arrow__right"></div>
@@ -189,7 +189,7 @@
                   </a>
                 </li>
                 <li class="l_footer-menu_lowlayer-page-submenu-item">
-                  <a href="history.html" class="l_footer-menu_lowlayer-page-submenu-link">
+                  <a href="<?php echo esc_url(home_url("/history")); ?>" class="l_footer-menu_lowlayer-page-submenu-link">
                     <span class="l_footer-menu_lowlayer-page-submenu-head">沿革</span>
                     <div class="m_arrow-wrapper">
                       <div class="m_arrow m_arrow__right"></div>
@@ -198,7 +198,7 @@
                   </a>
                 </li>
                 <li class="l_footer-menu_lowlayer-page-submenu-item">
-                  <a href="training.html" class="l_footer-menu_lowlayer-page-submenu-link">
+                  <a href="<?php echo esc_url(home_url("/training")); ?>" class="l_footer-menu_lowlayer-page-submenu-link">
                     <span class="l_footer-menu_lowlayer-page-submenu-head">研修</span>
                     <div class="m_arrow-wrapper">
                       <div class="m_arrow m_arrow__right"></div>
@@ -207,7 +207,7 @@
                   </a>
                 </li>
                 <li class="l_footer-menu_lowlayer-page-submenu-item">
-                  <a href="philosophy.html" class="l_footer-menu_lowlayer-page-submenu-link">
+                  <a href="<?php echo esc_url(home_url("/philosophy")); ?>" class="l_footer-menu_lowlayer-page-submenu-link">
                     <span class="l_footer-menu_lowlayer-page-submenu-head">企業理念・行動指針</span>
                     <div class="m_arrow-wrapper">
                       <div class="m_arrow m_arrow__right"></div>
@@ -218,7 +218,7 @@
               </ul>
             </li>
             <li class="l_footer-menu_lowlayer-page-item">
-              <a href="blog.html" class="l_footer-menu_lowlayer-page-link">
+              <a href="<?php echo esc_url(home_url("/blog")); ?>" class="l_footer-menu_lowlayer-page-link">
                 <span class="l_footer-menu_lowlayer-page-head l_footer-menu_lowlayer-page-head__blog">警備ブログ</span>
                 <!-- <span class="l_footer-menu_lowlayer-page-sub">Blog</span> -->
                 <div class="m_arrow-wrapper">
