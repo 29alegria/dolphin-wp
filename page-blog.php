@@ -26,7 +26,7 @@
           $the_query = new WP_Query( array(
               'post_status' => 'publish',
               'paged' => $paged,
-              'posts_per_page' => 6, // 表示件数
+              'posts_per_page' => 10, // 表示件数
               'orderby'     => 'date',
               'order' => 'DESC'
           ) );
