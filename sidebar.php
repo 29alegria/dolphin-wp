@@ -21,6 +21,9 @@
       ?>
           <article class="m_sidebar-post">
             <a href="<?php the_permalink(); ?>" class="m_sidebar-post_link">
+              <div class="m_sidebar-post_thumb-wrapper">
+                <?php the_post_thumbnail(null, array('class' => 'm_sidebar-post_thumb')); ?>
+              </div>
               <!-- /.m_post_thumb-wrapper -->
               <div class="m_sidebar-post_content">
                 <div class="m_sidebar-post_meta">

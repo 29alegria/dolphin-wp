@@ -2394,13 +2394,33 @@ iframe {
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .m_posts {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
 .m_post {
   box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .m_post {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 .m_post:not(:first-child) {
   margin-top: 24px;
   /* 最初の記事以外の上余白で記事同士の上下余白 */
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .m_post:not(:first-child) {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2413,6 +2433,7 @@ iframe {
 .m_post_thumb-wrapper {
   overflow: hidden;
   /* ホバー時にスケールした際、サムネルの大きさは変わらずに拡大する */
+  aspect-ratio: 3 /2;
 }
 
 @media screen and (min-width: 768px) {
@@ -2496,7 +2517,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 64px;
+  margin: 64px auto 0;
   gap: 8px;
 }
 
@@ -2602,6 +2623,7 @@ iframe {
 .m_sidebar-post_thumb-wrapper {
   overflow: hidden;
   /* ホバー時にスケールした際、サムネルの大きさは変わらずに拡大する */
+  aspect-ratio: 3 / 2;
 }
 
 @media screen and (max-width: 600px), screen and (min-width: 960px) {
