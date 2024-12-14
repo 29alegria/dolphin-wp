@@ -84,3 +84,15 @@ function add_defer($tag, $handle) {
   // deferを追加して返却する
   return str_replace(' src=', ' defer src=', $tag);
 }
+
+// SNSリンクを取得する関数
+function get_sns_link($platform) {
+  $sns_links = array(
+      'instagram' => 'https://www.instagram.com/dolphin.co.ltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      'facebook' =>  'https://www.facebook.com/DSPChiba/',
+      // 必要に応じて他のSNSを追加
+  );
+
+  return isset($sns_links[$platform]) ? $sns_links[$platform] : '#';
+}
+

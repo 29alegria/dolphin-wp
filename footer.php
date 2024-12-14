@@ -15,7 +15,7 @@
           <div class="l_footer_sns-info">
             <div class="l_footer_sns-wrapper">
               <a 
-                href="https://www.instagram.com/dolphin.co.ltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                href="<?php echo esc_url(get_sns_link('instagram')); ?>" 
                 class="l_footer_sns-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -26,7 +26,7 @@
             <!-- /.l_footer_sns-wrapper -->
             <div class="l_footer_sns-wrapper">
               <a 
-                href="https://www.facebook.com/DSPChiba/" 
+                href="<?php echo esc_url(get_sns_link('facebook')); ?>" 
                 class="l_footer_sns-link"
                 target="_blank"
                 rel="noopener noreferrer"
