@@ -46,6 +46,12 @@
     name="description"
     content="有限会社ドルフィンのブログ一覧ページ。交通誘導警備やイベント警備のお役立ち情報に加え、現場で活躍する先輩隊員の声をご紹介します。"
   />
+  <?php elseif (is_page("recruit")) : ?>
+  <title>採用情報 | 有限会社ドルフィン - 交通誘導警備・イベント警備スタッフ募集</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンの採用情報ページ。交通誘導警備やイベント警備スタッフの募集要項、仕事内容、応募方法などをご紹介します。"
+  />
   <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
   <!-- favicon/web-clip-icon -->
