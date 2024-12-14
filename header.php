@@ -58,6 +58,12 @@
     name="description"
     content="有限会社ドルフィンのお問い合わせページ。交通誘導警備やイベント警備に関するご質問、採用のご相談などお気軽にお問い合わせください。"
   />
+  <?php elseif (is_page("contact")) : ?>
+  <title>プライバシーポリシー | 有限会社ドルフィン - 個人情報の取り扱いについて</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。"
+  />
   <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
   <!-- favicon/web-clip-icon -->
