@@ -48,6 +48,14 @@
           />
         </div>
         <!-- /.top_kv-slideshow_slide -->
+        <div class="top_kv-slideshow_slide swiper-slide">
+          <img
+            class="top_kv-slideshow_slide_img"
+            src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/top_kv_img04.jpg"); ?>"
+            alt=""
+          />
+        </div>
+        <!-- /.top_kv-slideshow_slide -->
       </div>
       <!-- /.swiper-wrapper -->
       <!-- 適切なaltタグは、画像の内容を正確に表現することが重要です。ただし、装飾用の画像（例：デザインの一部としてのアイコンや装飾）の場合は、altタグを空にすることもあります。 -->
