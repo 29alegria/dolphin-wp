@@ -1,0 +1,76 @@
+<?php get_header(); ?>
+  
+  <div class="m_kv" id="top">
+    <div class="m_kv-inner l_container-lg">
+      <div class="m_kv-box">
+        <h1 class="m_kv-title">研修</h1>
+        <p class="m_kv-title_sub">TRAINING</p>
+      </div>
+      <!-- /.m_kv-box -->
+    </div>
+    <!-- /.m_kv-inner -->
+  </div>
+  <!-- /.m_kv -->
+
+  <nav class="m_breadcrumb l_container-lg">
+    <ul>
+      <li>
+        <a href="/">トップ</a>
+        <span>/</span>
+      </li>
+      <li>
+        <a href="/category">カテゴリ名</a>
+        <span>/</span>
+      </li>
+      <li>現在のページ</li>
+    </ul>
+  </nav>
+
+  <main class="l_main">
+    <div class="l_contents-sm">
+      <div class="l_container-sm">
+        <div class="m_section-title">
+          <h2 class="m_section-title_txt">研修</h2>
+        </div>
+        <!-- /.m_section-title -->
+        <p class="training_desc">私たちはより良いサービスをご提供できるよう、しっかりと研修をし、技術の向上を図っております。</p>
+        <div class="training_info-box">
+          <div class="training_info_img-wrapper">
+            <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/training01.jpg"); ?>" alt="新任研修の様子" class="training_info_img" width="800" height="600">
+          </div>
+          <!-- /.training_info_img-wrapper -->
+          <div class="training_info_content">
+            <h3 class="training_info-title">新任研修</h3>
+            <p class="training_info-txt">
+              新たに警備員になろうとする者に対して、警備業者が教育をするもの。警備員として仕事をする為の基本的知識及び業務の専門的技術を習得する為の教育(警備業法で定められている教育)
+            </p>
+            <p class="training_info-txt">教育方式：実技・座学講習</p>
+          </div>
+          <!-- /.training_info_content -->
+        </div>
+        <!-- /.training_info-box -->
+        <div class="training_info-box">
+          <div class="training_info_img-wrapper">
+            <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/training02.jpg"); ?>" alt="現任研修の様子" class="training_info_img" width="800" height="600">
+          </div>
+          <!-- /.training_info_img-wrapper -->
+          <div class="training_info_content">
+            <h3 class="training_info-title">現任研修</h3>
+            <p class="training_info-txt">
+              既に警備員として業務に就いている者に対して、技術と知識をより高め確かなものにする為の教育（半年に一度）(警備業法で定められている教育)
+            </p>
+            <p class="training_info-txt">教育方式：実技・座学講習</p>
+          </div>
+          <!-- /.training_info_content -->
+        </div>
+        <!-- /.training_info-box -->
+      </div>
+      <!-- /.l_container-sm -->
+    </div>
+    <!-- /.l_contents -->
+
+<?php get_template_part("cta-contact"); ?>
+
+  </main>
+
+<?php get_footer(); ?>

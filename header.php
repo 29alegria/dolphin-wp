@@ -28,6 +28,12 @@
     name="description"
     content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。"
   />
+  <?php elseif (is_page("history")) : ?>
+  <title>研修 | 有限会社ドルフィン - 安全と信頼を育む教育プログラム</title>
+  <meta
+    name="description"
+    content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。"
+  />
   <?php elseif (is_page("blog")) : ?>
   <title>ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声</title>
   <meta
