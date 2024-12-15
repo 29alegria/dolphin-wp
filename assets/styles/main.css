@@ -3255,7 +3255,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .entry_form_input {
-  width: 250px;
+  width: 210px;
   height: 40px;
   padding: 8px;
   margin-bottom: 4px;
@@ -3265,7 +3265,19 @@ input[type="checkbox"]:checked::after {
 }
 
 .entry_form_group:first-child .entry_form_input {
-  width: 150px;
+  width: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  .entry_form_input {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .entry_form_group:first-child .entry_form_input {
+    width: 150px;
+  }
 }
 
 .entry_form_button {

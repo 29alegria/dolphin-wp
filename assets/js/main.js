@@ -137,59 +137,59 @@ pageTop.addEventListener("click", function() {
 
 
 // エントリーフォームの住所
-// document.addEventListener('DOMContentLoaded', () => {
-//   const postalCodeInput = document.getElementById('postal-code');
-//   const prefectureSelect = document.getElementById('prefecture');
-//   const cityInput = document.getElementById('city');
-//   const autoInputButton = document.querySelector('.entry_form_button');
+document.addEventListener('DOMContentLoaded', () => {
+  const postalCodeInput = document.getElementById('postal-code');
+  const prefectureSelect = document.getElementById('prefecture');
+  const cityInput = document.getElementById('city');
+  const autoInputButton = document.querySelector('.entry_form_button');
 
-//   autoInputButton.addEventListener('click', () => {
-//     console.log('ボタンがクリックされました');
-//   });
+  autoInputButton.addEventListener('click', () => {
+    console.log('ボタンがクリックされました');
+  });
 
-//   autoInputButton.addEventListener('click', async () => {
-//     // 郵便番号の取得と整形
-//     const postalCode = postalCodeInput.value.trim().replace(/[^\d]/g, '');
+  autoInputButton.addEventListener('click', async () => {
+    // 郵便番号の取得と整形
+    const postalCode = postalCodeInput.value.trim().replace(/[^\d]/g, '');
 
-//     // 郵便番号が7桁でない場合はエラー
-//     if (postalCode.length !== 7) {
-//       alert('郵便番号は7桁で入力してください。');
-//       return;
-//     }
+    // 郵便番号が7桁でない場合はエラー
+    if (postalCode.length !== 7) {
+      alert('郵便番号は7桁で入力してください。');
+      return;
+    }
 
-//     try {
-//       // APIリクエスト
-//       const response = await fetch(`https://zipcloud.ibsnet.co.jp/api/search?zipcode=${postalCode}`);
-//       const data = await response.json();
+    try {
+      // APIリクエスト
+      const response = await fetch(`https://zipcloud.ibsnet.co.jp/api/search?zipcode=${postalCode}`);
+      const data = await response.json();
 
-//       // 住所情報の取得と入力
-//       if (data.results && data.results.length > 0) {
-//         const result = data.results[0];
+      // 住所情報の取得と入力
+      if (data.results && data.results.length > 0) {
+        const result = data.results[0];
         
-//         // 都道府県の自動選択
-//         const prefecture = result.address1;
-//         const prefectureOption = Array.from(prefectureSelect.options).find(
-//           option => option.text === prefecture
-//         );
+        // 都道府県の自動選択
+        const prefecture = result.address1;
+        const prefectureOption = Array.from(prefectureSelect.options).find(
+          option => option.text === prefecture
+        );
         
-//         if (prefectureOption) {
-//           prefectureSelect.value = prefectureOption.value;
-//         } else {
-//           alert(`都道府県「${prefecture}」が見つかりません。`);
-//           return;
-//         }
+        if (prefectureOption) {
+          prefectureSelect.value = prefectureOption.value;
+        } else {
+          alert(`都道府県「${prefecture}」が見つかりません。`);
+          return;
+        }
 
-//         // 市区町村・番地の自動入力
-//         cityInput.value = result.address2 + result.address3;
-//       } else {
-//         alert('該当する住所が見つかりませんでした。');
-//       }
-//     } catch (error) {
-//       console.error('住所検索中にエラーが発生しました:', error);
-//       alert('住所の取得に失敗しました。もう一度お試しください。');
-//     }
-//   });
-// });
+        // 市区町村・番地の自動入力
+        cityInput.value = result.address2 + result.address3;
+      } else {
+        alert('該当する住所が見つかりませんでした。');
+      }
+    } catch (error) {
+      console.error('住所検索中にエラーが発生しました:', error);
+      alert('住所の取得に失敗しました。もう一度お試しください。');
+    }
+  });
+});
 
 
 /*---------- top_kvスライドショー ----------*/

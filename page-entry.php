@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<?php 
+if (have_posts()) :
+  while (have_posts()) :
+    the_post();
+?>
+
 <?php get_template_part("m-kv"); ?>
 
   <main class="l_main">
@@ -9,7 +15,8 @@
           <h2 class="m_section-title_txt">エントリーフォーム</h2>
         </div>
         <!-- /.m_section-title -->
-        <form action="" class="contact_form">
+        <?php the_content(); ?>
+        <!-- <form action="" class="contact_form">
           <dl class="contact_form_list">
             <dt class="contact_form_heading">
               お名前<span class="contact_form_example">例.山田太郎</span>
@@ -49,20 +56,19 @@
             </dd>
             
 
-            <!-- 住所 -->
+            住所
             <dt class="contact_form_heading">
               ご住所
-              <!-- <span class="contact_form_required">必須</span> -->
             </dt>
             <dd class="entry_form_detail">
-              <!-- 郵便番号 -->
+              郵便番号
               <div class="entry_form_group">
                 <label for="postal-code" class="entry_form_label">郵便番号</label>
                 <input type="text" id="postal-code" class="entry_form_input" placeholder="例: 1234567" maxlength="7">
                 <button type="button" class="entry_form_button">自動入力する</button>
               </div>
 
-              <!-- 都道府県 -->
+              都道府県
               <div class="entry_form_group">
                 <label for="prefecture" class="entry_form_label">都道府県</label>
                 <select id="prefecture" class="entry_form_input">
@@ -117,13 +123,13 @@
                 </select>
               </div>
 
-              <!-- 市区町村・番地 -->
+              市区町村・番地
               <div class="entry_form_group">
                 <label for="city" class="entry_form_label">市区町村・番地</label>
                 <input type="text" id="city" class="entry_form_input" placeholder="例: 千代田区丸の内1-1-1">
               </div>
 
-              <!-- 建物名 -->
+              建物名
               <div class="entry_form_group">
                 <label for="building" class="entry_form_label">建物名</label>
                 <input type="text" id="building" class="entry_form_input" placeholder="例: サンプルビル101号室">
@@ -160,11 +166,9 @@
             <div class="privacy-link_icon-wrapper">
               <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/link-icon.svg"); ?>" alt="外部リンクアイコン" class="privacy-link_icon" width="32" height="32">
             </div>
-            <!-- /.privacy-link_icon-wrapper -->
             </a>
             に同意する
           </div>
-          <!-- /.contact_form_privacy-wrapper -->
           <p class="privacy-error-message" style="display: none; color: red; font-size: 12px; margin-top: 8px;">プライバシーポリシーに同意してください。</p>
 
           
@@ -177,12 +181,16 @@
               >
             </div>
           </div>
-          <!-- /.contact_btn-wrapper -->
-        </form>
+        </form> -->
       </div>
       <!-- /.l_container-sm -->
     </div>
     <!-- /.l_contents -->
   </main>
+
+  <?php
+endwhile;
+endif;
+?>
 
 <?php get_footer(); ?>
