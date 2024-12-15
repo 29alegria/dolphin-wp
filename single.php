@@ -2,19 +2,8 @@
 
 <?php get_template_part("m-kv"); ?>
 
-  <nav class="m_breadcrumb l_container-lg">
-    <ul>
-      <li>
-        <a href="/">トップ</a>
-        <span>/</span>
-      </li>
-      <li>
-        <a href="/category">カテゴリ名</a>
-        <span>/</span>
-      </li>
-      <li>現在のページ</li>
-    </ul>
-  </nav>
+<?php if (function_exists('custom_breadcrumbs')) custom_breadcrumbs(); ?>
+
 
   <div class="l_wrapper single_article_wrapper">
     <div class="l_contents">

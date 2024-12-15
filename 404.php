@@ -2,6 +2,9 @@
 
 <?php get_template_part("m-kv"); ?>
 
+<?php if (function_exists('custom_breadcrumbs')) custom_breadcrumbs(); ?>
+
+
   <main class="l_main">
     <div class="l_contents">
       <div class="l_container-lg">

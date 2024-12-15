@@ -128,3 +128,35 @@ add_filter('wpcf7_form_elements', function($content) {
   return do_shortcode($content);
 });
 
+
+function custom_breadcrumbs() {
+  // ホームリンクのURLとタイトル
+  $home_url = home_url('/');
+  $home_name = 'ホーム';
+
+  echo '<nav class="breadcrumbs">';
+  echo '<ul>';
+
+  // ホームリンク
+  echo '<li><a href="' . $home_url . '">' . $home_name . '</a></li>';
+
+  // 投稿ページの場合
+  if (is_single()) {
+      $category = get_the_category();
+      if ($category) {
+          // カテゴリ階層を取得してリストに追加
+          $cat_tree = get_category_parents($category[0], true, '</li><li>');
+          echo '<li>' . rtrim($cat_tree, '</li><li>') . '</li>';
+      }
+      echo '<li>' . get_the_title() . '</li>';
+  }
+  // 404ページの場合
+  elseif (is_404()) {
+      echo '<li>ページが見つかりません</li>';
+  }
+
+  echo '</ul>';
+  echo '</nav>';
+}
+
+

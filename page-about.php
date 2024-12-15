@@ -1,26 +1,6 @@
 <?php get_header(); ?>
 
 <?php get_template_part("m-kv"); ?>
-
-  <nav class="m_breadcrumb l_container-lg">
-    <ul>
-      <li>
-        <a href="/">トップ</a>
-        <span>/</span>
-      </li>
-      <li>
-        <a href="/category">カテゴリ名</a>
-        <span>/</span>
-      </li>
-      <li>現在のページ</li>
-    </ul>
-  </nav>
-  <?php if (function_exists('bcn_display')) {
-    echo '<nav class="breadcrumb">';
-    bcn_display();
-    echo '</nav>';
-} ?>
-
   
   <main class="l_main">
     <section class="about_section">

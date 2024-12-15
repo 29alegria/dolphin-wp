@@ -2,20 +2,6 @@
 
 <?php get_template_part("m-kv"); ?>
 
-  <nav class="m_breadcrumb l_container-lg">
-    <ul>
-      <li>
-        <a href="/">トップ</a>
-        <span>/</span>
-      </li>
-      <li>
-        <a href="/category">カテゴリ名</a>
-        <span>/</span>
-      </li>
-      <li>現在のページ</li>
-    </ul>
-  </nav>
-
   <div class="l_wrapper">
     <div class="l_contents">
       <div class="l_contents-wrap l_container-lg">
