@@ -1366,7 +1366,7 @@ img {
 /* ---------- top-kv ---------- */
 .top_kv {
   height: 100vh;
-  max-height: 1000px;
+  max-height: 900px;
   padding-top: 72px;
   /* background: linear-gradient(
     rgba(0, 0, 0, 0.2), 
@@ -1500,7 +1500,7 @@ img {
   right: 0;
   bottom: 0;
   padding-top: 72px;
-  max-height: 1000px;
+  max-height: 900px;
 }
 
 @media screen and (min-width: 1088px) {
