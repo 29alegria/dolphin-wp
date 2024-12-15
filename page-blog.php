@@ -2,66 +2,66 @@
 
 <?php get_template_part("m-kv"); ?>
 
-  <div class="l_wrapper">
-    <div class="l_contents">
-      <div class="l_contents-wrap l_container-lg">
-        <main class="l_main">
-          <div class="m_posts">
-          <?php
-          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-          $the_query = new WP_Query( array(
-              'post_status' => 'publish',
-              'paged' => $paged,
-              'posts_per_page' => 10, // 表示件数
-              'orderby'     => 'date',
-              'order' => 'DESC'
-          ) );
-  
-  
-          if ($the_query->have_posts()) :?><?php
-            while ($the_query->have_posts()) : $the_query->the_post();?>
+<div class="l_wrapper">
+<div class="l_contents">
+    <div class="l_contents-wrap l_container-lg">
+    <main class="l_main">
+        <div class="m_posts">
+        <?php
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $the_query = new WP_Query( array(
+            'post_status' => 'publish',
+            'paged' => $paged,
+            'posts_per_page' => 10, // 表示件数
+            'orderby'     => 'date',
+            'order' => 'DESC'
+        ) );
+
+
+        if ($the_query->have_posts()) :?><?php
+        while ($the_query->have_posts()) : $the_query->the_post();?>
 <article class="m_post">
-  <a href="<?php the_permalink(); ?>" class="m_post_link">
-      <div class="m_post_thumb-wrapper">
-          <?php if (has_post_thumbnail()) : ?>
-              <img
-                  width="600"
-                  height="400"
-                  src="<?php the_post_thumbnail_url('medium'); ?>"
-                  alt="<?php the_title_attribute(); ?>"
-                  class="m_post_thumb"
-              />
-          <?php else : ?>
-              <img
-                  width="600"
-                  height="400"
-                  src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/blog-thumbnail.jpg'); ?>"
-                  alt="ブログサムネイル"
-                  class="m_post_thumb"
-              />
-          <?php endif; ?>
-      </div>
-      <div class="m_post_content">
-          <div class="m_post_meta">
-              <time class="m_post_meta-date"><?php echo get_the_date('Y.m.d'); ?></time>
-              <span class="m_post_meta-cat">
-                  <?php
-                  $categories = get_the_category();
-                  echo !empty($categories) ? esc_html($categories[0]->name) : 'カテゴリーなし';
-                  ?>
-              </span>
-          </div>
-          <h2 class="m_post_title"><?php the_title(); ?></h2>
-      </div>
-  </a>
+<a href="<?php the_permalink(); ?>" class="m_post_link">
+    <div class="m_post_thumb-wrapper">
+        <?php if (has_post_thumbnail()) : ?>
+            <img
+                width="600"
+                height="400"
+                src="<?php the_post_thumbnail_url('medium'); ?>"
+                alt="<?php the_title_attribute(); ?>"
+                class="m_post_thumb"
+            />
+        <?php else : ?>
+            <img
+                width="600"
+                height="400"
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/blog-thumbnail.jpg'); ?>"
+                alt="ブログサムネイル"
+                class="m_post_thumb"
+            />
+        <?php endif; ?>
+    </div>
+    <div class="m_post_content">
+        <div class="m_post_meta">
+            <time class="m_post_meta-date"><?php echo get_the_date('Y.m.d'); ?></time>
+            <span class="m_post_meta-cat">
+                <?php
+                $categories = get_the_category();
+                echo !empty($categories) ? esc_html($categories[0]->name) : 'カテゴリーなし';
+                ?>
+            </span>
+        </div>
+        <h2 class="m_post_title"><?php the_title(); ?></h2>
+    </div>
+</a>
 </article>
-      <?php
-        endwhile;
-      else :
-      ?>
-      <p>投稿データはありません。</p>
-      <?php
-      endif;?>
+    <?php
+    endwhile;
+    else :
+    ?>
+    <p>投稿データはありません。</p>
+    <?php
+    endif;?>
 <!-- pagenation -->
 <div class="m_pagination">
     <?php 
@@ -105,16 +105,16 @@
     wp_reset_postdata();
     ?>
 </div><!-- /pagination -->
-          </div>
-          <!-- /.m_posts -->
-        </main>
-        <?php get_sidebar(); ?>
-      </div>
-      <!-- /.l_container-lg -->
+        </div>
+        <!-- /.m_posts -->
+    </main>
+    <?php get_sidebar(); ?>
     </div>
-    <!-- /.l_contents -->    
-  </div>
-  <!-- /.l_wrapper -->
+    <!-- /.l_container-lg -->
+</div>
+<!-- /.l_contents -->    
+</div>
+<!-- /.l_wrapper -->
 
 <?php get_template_part("cta-recruit"); ?>
 
