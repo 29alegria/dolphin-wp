@@ -132,7 +132,7 @@ add_filter('wpcf7_form_elements', function($content) {
 function custom_breadcrumbs() {
   // ホームリンクのURLとタイトル
   $home_url = home_url('/');
-  $home_name = 'ホーム';
+  $home_name = 'トップ';
 
   echo '<nav class="breadcrumbs">';
   echo '<ul>';
@@ -142,14 +142,14 @@ function custom_breadcrumbs() {
 
   // 投稿ページの場合
   if (is_single()) {
-      $category = get_the_category();
-      if ($category) {
-          // カテゴリ階層を取得してリストに追加
-          $cat_tree = get_category_parents($category[0], true, '</li><li>');
-          echo '<li>' . rtrim($cat_tree, '</li><li>') . '</li>';
-      }
+      // 「警備一覧ページ」リンクを追加
+      $blog_page_url = get_permalink(get_page_by_path('blog')); // blog固定ページのURL取得
+      echo '<li><a href="' . esc_url($blog_page_url) . '">警備一覧ページ</a></li>';
+
+      // 現在の投稿タイトル
       echo '<li>' . get_the_title() . '</li>';
   }
+
   // 404ページの場合
   elseif (is_404()) {
       echo '<li>ページが見つかりません</li>';
@@ -158,5 +158,6 @@ function custom_breadcrumbs() {
   echo '</ul>';
   echo '</nav>';
 }
+
 
 

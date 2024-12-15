@@ -2,11 +2,13 @@
 
 <?php get_template_part("m-kv"); ?>
 
+<div class="m_breadcrumbs-wrapper l_container-lg">
 <?php if (function_exists('custom_breadcrumbs')) custom_breadcrumbs(); ?>
+</div>
 
 
   <div class="l_wrapper single_article_wrapper">
-    <div class="l_contents">
+    <div class="l_contents-sm">
       <div class="l_contents-wrap l_container-lg">
         <main class="l_main">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

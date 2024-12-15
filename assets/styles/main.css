@@ -1014,37 +1014,67 @@ img {
 }
 
 /* ---------- m_breadcrumb ---------- */
-.m_breadcrumb {
-  margin-top: 16px;
+/* パンくずリストのスタイリング */
+.breadcrumbs {
+  font-size: 14px; /* フォントサイズ */
+  margin: 16px 0; /* 上下余白 */
+  padding-bottom: 8px; /* 内側余白 */
+  overflow-x: auto; /* 横スクロールを有効化 */
+  white-space: nowrap; /* 折り返しを防ぐ */
+  -webkit-overflow-scrolling: touch; /* スクロールの滑らかさを向上 (iOS対応) */
 }
 
-.m_breadcrumb ul {
-  display: flex;
-  gap: 24px;
+.breadcrumbs ul {
+  display: flex; /* 横並び */
+  list-style: none; /* リストマーカーを削除 */
+  padding: 0; /* リストの内側余白を削除 */
+  margin: 0; /* リストの外側余白を削除 */
 }
 
-.m_breadcrumb li {
-  display: flex;
-  gap: 16px;
-  font-size: 14px;
+.breadcrumbs li {
+  margin-right: 8px; /* リスト項目間のスペース */
+  flex-shrink: 0; /* 幅が狭い場合でもリスト項目を縮小しない */
 }
 
-@media screen and (min-width: 768px) {
-  .m_breadcrumb li {
-    font-size: 16px;
-  }
+.breadcrumbs li a {
+  text-decoration: none; /* リンクの下線を削除 */
+  color: var(--accent-color); /* リンクカラー */
+  font-weight: bold; /* リンクを太字 */
 }
 
-.m_breadcrumb li:last-child {
-  color: var(--main-color);
+.breadcrumbs li a:hover {
+  text-decoration: underline; /* ホバー時に下線を追加 */
 }
 
-.m_breadcrumb a {
-  color: var(--main-color);
+
+.breadcrumbs li:last-child {
+  color: var(--accent-color); /* 最後の項目は通常文字色 */
+  font-weight: normal; /* 通常の太さ */
+  pointer-events: none; /* 最後の項目はリンクにしない */
 }
 
-.m_breadcrumb a:hover {
-  text-decoration: underline;
+.breadcrumbs li::after {
+  content: '>'; /* 区切り記号 */
+  margin-left: 8px; /* 区切り記号の左側スペース */
+  color: #ccc; /* 区切り記号の色 */
+}
+
+.breadcrumbs li:last-child::after {
+  content: ''; /* 最後の項目の区切り記号を削除 */
+}
+
+/* 横スクロールバーをカスタマイズ（オプション） */
+.breadcrumbs::-webkit-scrollbar {
+  height: 2px; /* 横スクロールバーの高さ */
+}
+
+.breadcrumbs::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* スクロールバーの色 */
+  border-radius: 4px; /* 丸みを付ける */
+}
+
+.breadcrumbs::-webkit-scrollbar-track {
+  background-color: var(--base-color); /* スクロールバーの背景 */
 }
 
 /* ----------　m-section-title ----------*/
