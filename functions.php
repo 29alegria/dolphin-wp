@@ -105,3 +105,26 @@ function get_external_link() {
 }
 
 
+// Contact Form 7で自動挿入されるPタグ、brタグを削除
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+  return false;
+}
+
+// プライバシーポリシーページのURLを取得
+function get_dynamic_privacy_url() {
+  return esc_url(home_url('/privacy/'));
+}
+add_shortcode('privacy_url', 'get_dynamic_privacy_url');
+
+// プライバシーポリシーアイコンのURLを取得
+function get_dynamic_image_url() {
+  return esc_url(get_template_directory_uri() . '/assets/images/link-icon.svg');
+}
+add_shortcode('privacy_icon_url', 'get_dynamic_image_url');
+
+// Contact Form 7でショートコードを有効化
+add_filter('wpcf7_form_elements', function($content) {
+  return do_shortcode($content);
+});
+

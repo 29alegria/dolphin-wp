@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<?php 
+if (have_posts()) :
+  while (have_posts()) :
+    the_post();
+?>
+
 <?php get_template_part("m-kv"); ?>
 
   <main class="l_main">
@@ -9,8 +15,10 @@
           <h2 class="m_section-title_txt">お問い合わせ</h2>
         </div>
         <!-- /.m_section-title -->
+        
+        <?php the_content() ?>
 
-        <form action="" class="contact_form">
+        <!-- <form action="" class="contact_form">
           <dl class="contact_form_list">
             <dt class="contact_form_heading">
               会社名<span class="contact_form_example"
@@ -120,11 +128,9 @@
             <div class="privacy-link_icon-wrapper">
               <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/link-icon.svg"); ?>" alt="外部リンクアイコン" class="privacy-link_icon" width="32" height="32">
             </div>
-            <!-- /.privacy-link_icon-wrapper -->
             </a>
             に同意する
           </div>
-          <!-- /.contact_form_privacy-wrapper -->
           <p class="privacy-error-message" style="display: none; color: red; font-size: 12px; margin-top: 8px;">プライバシーポリシーに同意してください。</p>
 
 
@@ -138,12 +144,15 @@
               >
             </div>
           </div>
-          <!-- /.contact_btn-wrapper -->
           
-        </form>
+        </form> -->
       </div>
       <!-- /.l_container-sm -->
     </div>
     <!-- /.l_contents -->
   </main>
+<?php
+endwhile;
+endif;
+?>
 <?php get_footer(); ?>

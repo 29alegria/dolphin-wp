@@ -3019,7 +3019,11 @@ iframe {
 }
 
 /* ---------- contact ----------- */
-.contact_form {
+/* .contact_form {
+  margin-top: 64px;
+} */
+
+.contact_form_list {
   margin-top: 64px;
 }
 
@@ -3139,14 +3143,6 @@ iframe {
   transition: transform 0.3s ease;
 }
 
-.privacy-error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 8px;
-  text-align: center;
-  display: none; /* 初期状態では非表示 */
-}
-
 /* チェックボックスデザイン
 input[type="checkbox"] セレクターを使って全てのチェックボックスに適用されるスタイルを定義
 ⇒今回はプライバシーポリシーのチェックボックス */
@@ -3183,14 +3179,14 @@ input[type="checkbox"]:focus-visible::before {
 }
 
 input[type="checkbox"]::after {/* チェックマークの定義※デフォルトでは非表示 */
-  border-bottom: 3px solid var(--main-color); /*チェックの太さ*/
-  border-left: 3px solid var(--main-color); /*チェックの太さ*/
+  border-bottom: 4px solid var(--main-color); /*チェックの太さ*/
+  border-left: 4px solid var(--main-color); /*チェックの太さ*/
   opacity: 0; /*チェック前は非表示*/
-  height: 10px; /*チェックの高さ*/
-  width: 17px; /*チェックの横幅*/
+  height: 15px; /*チェックの高さ*/
+  width: 25px; /*チェックの横幅*/
   transform: rotate(-45deg);
-  top: 5px; /*チェック時の位置調整*/
-  left: 9px; /*チェック時の位置調整*/
+  top: -10px; /*チェック時の位置調整*/
+  left: 5px; /*チェック時の位置調整*/
 }
 
 input[type="checkbox"]:checked::after {
@@ -3310,4 +3306,92 @@ input[type="checkbox"]:checked::after {
   height: 64px;
   width: 343px;
   margin: 80px 0 auto 0;
+}
+
+/* ---------- form ---------- */
+/* contact form
+Contact Form 7 プラグインで生成されるラジオボタンフォームに対するスタイル 
+.wpcf7-radio { ... }: Contact Form 7のラジオボタンフォーム全体のスタイルを指定します。
+.wpcf7-radio .wpcf7-list-item { ... }: ラジオボタンの各項目に対するスタイルを指定します。
+.wpcf7-radio .wpcf7-list-item label { ... }: ラジオボタンのラベルのスタイルを指定します。
+.wpcf7-list-item-label { ... }: ラジオボタンのラベルのスタイルを指定します。*/
+.wpcf7-radio {/* ラジオフォーム全体 */
+  display: flex;
+  flex-direction: column;
+  /* 縦並び */
+}
+
+@media screen and (min-width: 1080px) {
+  .wpcf7-radio {
+    flex-direction: row;
+    /* PCサイズでは横並び */
+  }
+}
+
+.wpcf7-radio .wpcf7-list-item {
+  margin-top: 24px;
+  /* 全部のリストアイテムの上余白 */
+}
+
+.wpcf7-radio .wpcf7-list-item:not(:first-child) {
+  margin-top: 40px;
+  /* 最初以外のリストアイテムの上余白はmargin-top:24px;を上書き */
+}
+
+@media screen and (min-width: 1080px) {
+  .wpcf7-radio .wpcf7-list-item {
+    margin: 24px 40px 0 0;
+    /* PCサイズ時の最初の要素がこの余白になる
+    最初以外の要素にも適用されるが、margin-topのみ40pxに指定しているため下記で変更 */
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .wpcf7-radio .wpcf7-list-item:not(:first-child) {
+    margin-top: 24px;
+    /* 最初以外の要素のmargin-topを40pxから変更 */
+  }
+}
+
+.wpcf7-radio .wpcf7-list-item label {
+/* .wpcf7-radioの.wpcf7-list-itemのlabelタグ */
+  /* appearance: radio; ※あってもなくても変わらない*/
+  display: flex;
+  align-items: center;
+  /* inputタグ（ラジオボタン）とラベル（項目名）を上下中央揃え */
+}
+
+.wpcf7-radio .wpcf7-list-item input[type="radio"] {
+  appearance: radio;
+  /* ラジオボタン出現 */
+}
+
+.wpcf7-list-item-label {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 16px;
+  /* ラジオボタンとの左右余白 */
+}
+
+.wpcf7-spinner {/* 送信ボタン */
+  display: none;
+  /* フォーム送信時に表示されるスピナーを非表示。 */
+}
+
+.wpcf7-acceptance .wpcf7-list-item {/* プライバシーポリシーのチェックボックスと「プライバシーポリシー」との左右余白 */
+  margin: 0 16px 0 0;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  color: crimson;
+  border-color: crimson;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: var(--main-color);
+  text-align: center;
+}
+
+.wpcf7-response-output {
+  color: var(--main-color);
 }
