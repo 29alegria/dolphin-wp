@@ -34,20 +34,33 @@ function openingAnime() {
         underlineAnimation(); // 初回アニメーションの最後に下線アニメーションを実行
         gsap.killTweensOf(".js_opening-logo"); // バウンドアニメーションを停止
       },
+    })
+    .from(".js_copy", {
+      duration: 0.5,
+      autoAlpha: 0,
+      x: -100,
+    })
+    .from(".js_sub-copy", {
+      duration: 0.5,
+      autoAlpha: 0,
+      x: -100,
+      onComplete: function () {
+        underlineAnimation(); // 下線アニメーションを最後に実行
+        gsap.delayedCall(2, underlineAnimation()); 
+      },
     });
-
 }
 
 // 常時実行する下線のアニメーション
 function underlineAnimation() {
   gsap.timeline()
     .to(".js_copy .line1", {
-      duration: 1,
+      duration: 2,
       backgroundSize: "100% 8px",
       ease: "power1.out",
     })
     .to(".js_copy .line2", {
-      duration: 1,
+      duration: 2,
       backgroundSize: "100% 8px",
       ease: "power1.out",
     }, "+=0.2"); // 0.2秒遅延
