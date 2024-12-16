@@ -15,7 +15,18 @@
                 <article class="single_article">
                     <div class="single_article_thumb-wrapper">
                         <?php if (has_post_thumbnail()) : ?>
-                            <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title_attribute(); ?>" class="single_article_thumb" />
+                            <?php 
+                            // サムネイル情報を取得
+                            $thumbnail_id = get_post_thumbnail_id(); // サムネイルIDを取得
+                            $thumbnail = wp_get_attachment_image_src($thumbnail_id, 'large'); // サムネイル情報を取得
+                            ?>
+                            <img 
+                            src="<?php the_post_thumbnail_url('large'); ?>" 
+                            alt="<?php the_title_attribute(); ?>" 
+                            width="<?php echo esc_attr($thumbnail[1]); ?>" 
+                            height="<?php echo esc_attr($thumbnail[2]); ?>" 
+                            class="single_article_thumb" 
+                            />
                         <?php endif; ?>
                     </div>
 
