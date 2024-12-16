@@ -66,21 +66,21 @@ function underlineAnimation() {
     }, "+=0.2"); // 0.2秒遅延
 }
 
-// openingAnime();
+openingAnime();
 
-// 初回アクセス時の処理
-const opening = document.querySelector(".js_opening");
+// // 初回アクセス時の処理
+// const opening = document.querySelector(".js_opening");
 
-function webStorage() {
-  if (sessionStorage.getItem('access')) {
-    // 初回以外のアクセス時は下線アニメーションのみ実行
-    underlineAnimation();
-    opening.classList.add("is-active");
-  } else {
-    // 初回アクセス時の処理
-    sessionStorage.setItem('access', 0);
-    openingAnime(); // 初回アニメーション（下線アニメーションを含む）
-  }
-}
+// function webStorage() {
+//   if (sessionStorage.getItem('access')) {
+//     // 初回以外のアクセス時は下線アニメーションのみ実行
+//     underlineAnimation();
+//     opening.classList.add("is-active");
+//   } else {
+//     // 初回アクセス時の処理
+//     sessionStorage.setItem('access', 0);
+//     openingAnime(); // 初回アニメーション（下線アニメーションを含む）
+//   }
+// }
 
-webStorage();
+// webStorage();
