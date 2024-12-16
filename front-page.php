@@ -146,7 +146,7 @@
                   <a href="<?php echo esc_url(home_url("/about")); ?>" class="m_btn m_btn__right-arrow">
                     <div class="top_company_btn_head">
                       <div class="top_company_btn_icon-wrapper">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/company-icon-b.svg"); ?>." alt="会社概要アイコン" class="top_company_btn_icon" width="50" height="50">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/company-icon-b.svg"); ?>" alt="会社概要アイコン" class="top_company_btn_icon" width="50" height="50">
                       </div>
                       <!-- /.top_company_btn_icon-wrapper -->
                       <span class="btn_head">会社概要を見る</span>
