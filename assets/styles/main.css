@@ -1739,6 +1739,7 @@ img {
 
   width: 100%;
   overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .top_company_menu_list {
