@@ -14,13 +14,13 @@ function openingAnime() {
       scale: 0.8,
       y: 40,
     })
-    .to(".js_opening-logo", {
-      duration: 0.6,
-      y: -8, // 上に移動
-      yoyo: true, // 移動を逆方向に繰り返す
-      repeat: -1, // 無限ループ
-      ease: "power1.inOut", // スムーズなバウンド効果
-    } ,"<")
+    // .to(".js_opening-logo", {
+    //   duration: 0.6,
+    //   y: -8, // 上に移動
+    //   yoyo: true, // 移動を逆方向に繰り返す
+    //   repeat: -1, // 無限ループ
+    //   ease: "power1.inOut", // スムーズなバウンド効果
+    // } ,"<")
     .from(".js_opening-txt", {
       duration: 2,
       autoAlpha: 0,

@@ -822,8 +822,13 @@ img {
   /* 200 */
   /* background: var(--base-color); */
   /* background: linear-gradient(to bottom, #FDEB71 0%, #FFCC58 60%, #FFCC58 100%);; */
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   /* filter: brightness(120%); */
+  background: linear-gradient(to bottom, #a8d8ea, #5bc0eb);
+  /* background: linear-gradient(to bottom, #FDEB71, #FFCC58); */
+  /* background-color: #2A4D69; */
+  align-items: center;
+  justify-content: center;
   display: flex;
 }
 
@@ -854,8 +859,6 @@ img {
 }
 
 .m_opening_heading {
-  /* color: var(--accent-color); */
-  /* color: var(--base-color); */
   color: var(--main-color);
   font-family: "Oswald", serif;
   font-size: 28px;
