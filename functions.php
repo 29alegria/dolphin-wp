@@ -8,7 +8,8 @@ add_action('wp_enqueue_scripts', 'add_styles');
 function add_styles() {
 
   // google fonts
-  wp_enqueue_style('google-fonts_style', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  // wp_enqueue_style('google-fonts_style', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+  wp_enqueue_style('google-fonts_style', "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@700&display=swap");
 
   // reset style
   wp_register_style(

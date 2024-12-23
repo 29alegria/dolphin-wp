@@ -127,10 +127,11 @@
       <!-- /.m_opening_logo-wrapper -->
 
       <div class="m_opening_txt js_opening-txt">
-        <p class="m_opening_heading">有限会社ドルフィン</p>
-        <p class="m_opening_desc">
+        <p class="m_opening_heading">dolphin security</p>
+        <!-- <p class="m_opening_heading">有限会社ドルフィン</p> -->
+        <!-- <p class="m_opening_desc">
           安全と信頼を提供する警備サービス
-        </p>
+        </p> -->
       </div>
     </div>
   </div>
