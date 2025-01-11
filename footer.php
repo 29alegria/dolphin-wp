@@ -79,7 +79,7 @@
                 </a>
               </li>
               <li class="l_footer-cta_item">
-                <a href="" class="l_footer-cta_link">
+                <a href="<?php echo esc_url(home_url('/wp-content/uploads/2025/01/dolphin_license.pdf')); ?>" class="l_footer-cta_link" target="_blank" rel="noopener noreferrer">
                   <span class="l_footer-cta_txt">認定標識はこちら</span>
                   <div class="m_arrow-wrapper">
                     <div class="m_arrow__round">
@@ -90,6 +90,7 @@
                   <!-- /.m_arrow-wrapper -->
                 </a>
               </li>
+
             </ul>
           </nav>
         </div>
