@@ -142,18 +142,19 @@
                 <!-- /.m_arrow-wrapper -->
               </a>
             </li>
-            <li class="l_footer-cta_item">
-                <a href="<?php echo esc_url(home_url('/wp-content/uploads/2025/01/dolphin_license.pdf')); ?>" class="l_footer-cta_link" target="_blank" rel="noopener noreferrer">
-                  <span class="l_footer-cta_txt">認定標識はこちら</span>
-                  <div class="m_arrow-wrapper">
-                    <div class="m_arrow__round">
-                      <div class="m_arrow m_arrow__right"></div>
-                    </div>
-                    <!-- /.m_arrow__round -->
+            <li class="l_footer-menu_cta-item">
+            <a href="<?php echo esc_url(home_url('/wp-content/uploads/2025/01/dolphin_license.pdf')); ?>" class="l_footer-menu_cta-link" target="_blank" rel="noopener noreferrer">
+              <span class="l_footer-menu_cta-head l_footer-menu_cta-head__certification">認定標識はこちら</span>
+                <!-- <span class="l_footer-menu_cta-sub">Privacy Policy</span> -->
+                <div class="m_arrow-wrapper">
+                  <div class="m_arrow__round">
+                    <div class="m_arrow m_arrow__right"></div>
                   </div>
-                  <!-- /.m_arrow-wrapper -->
-                </a>
-              </li>
+                  <!-- /.m_arrow__round -->
+                </div>
+                <!-- /.m_arrow-wrapper -->
+              </a>
+            </li>
           </ul>
         </div>
         <!-- /.l_footer-menu_cta -->
