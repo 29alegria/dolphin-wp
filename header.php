@@ -6,76 +6,82 @@
   <?php 
   if (is_front_page()) : ?>
   <title>有限会社ドルフィン | 千葉県市川市の交通誘導警備・イベント警備</title>
-  <meta
-    name="description"
-    content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。"
-  />
+  <meta name="description" content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="有限会社ドルフィン | 千葉県市川市の交通誘導警備・イベント警備" />
+  <meta property="og:description" content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。" />
   <?php elseif (is_page("service")) : ?>
   <title>事業内容 | 有限会社ドルフィン - 千葉県市川市の交通誘導警備・イベント警備</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。"
-  />
+  <meta name="description" content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="事業内容 | 有限会社ドルフィン - 千葉県市川市の交通誘導警備・イベント警備" />
+  <meta property="og:description" content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。" />
   <?php elseif (is_page("about")) : ?>
   <title>会社情報 | 有限会社ドルフィン - 基本情報と主要取引先</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。"
-  />
+  <meta name="description" content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="会社情報 | 有限会社ドルフィン - 基本情報と主要取引先" />
+  <meta property="og:description" content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。" />
   <?php elseif (is_page("history")) : ?>
   <title>沿革 | 有限会社ドルフィン - 会社の歴史と成長の歩み・実績</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。"
-  />
+  <meta name="description" content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="沿革 | 有限会社ドルフィン - 会社の歴史と成長の歩み・実績" />
+  <meta property="og:description" content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。" />
   <?php elseif (is_page("training")) : ?>
   <title>研修 | 有限会社ドルフィン - 安全と信頼を育む教育プログラム</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。"
-  />
+  <meta name="description" content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="研修 | 有限会社ドルフィン - 安全と信頼を育む教育プログラム" />
+  <meta property="og:description" content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。" />
   <?php elseif (is_page("philosophy")) : ?>
   <title>企業理念・行動指針 | 有限会社ドルフィン - 信頼と安全を追求する企業姿勢</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの企業理念・行動指針ページ。信頼と安全を基本とした企業姿勢や、社会に貢献するための行動基準をご紹介します。"
-  />
+  <meta name="description" content="有限会社ドルフィンの企業理念・行動指針ページ。信頼と安全を基本とした企業姿勢や、社会に貢献するための行動基準をご紹介します。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="企業理念・行動指針 | 有限会社ドルフィン - 信頼と安全を追求する企業姿勢" />
+  <meta property="og:description" content="有限会社ドルフィンの企業理念・行動指針ページ。信頼と安全を基本とした企業姿勢や、社会に貢献するための行動基準をご紹介します。" />
   <?php elseif (is_page("blog")) : ?>
   <title>ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンのブログ一覧ページ。交通誘導警備やイベント警備のお役立ち情報に加え、現場で活躍する先輩隊員の声をご紹介します。"
-  />
+  <meta name="description" content="有限会社ドルフィンのブログ一覧ページ。交通誘導警備やイベント警備のお役立ち情報に加え、現場で活躍する先輩隊員の声をご紹介します。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声" />
+  <meta property="og:description" content="有限会社ドルフィンのブログ一覧ページ。交通誘導警備やイベント警備のお役立ち情報に加え、現場で活躍する先輩隊員の声をご紹介します。" />
   <?php elseif (is_page("recruit")) : ?>
   <title>採用情報 | 有限会社ドルフィン - 交通誘導警備・イベント警備スタッフ募集</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの採用情報ページ。交通誘導警備やイベント警備スタッフの募集要項、仕事内容、応募方法などをご紹介します。"
-  />
+  <meta name="description" content="有限会社ドルフィンの採用情報ページ。交通誘導警備やイベント警備スタッフの募集要項、仕事内容、応募方法などをご紹介します。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="採用情報 | 有限会社ドルフィン - 交通誘導警備・イベント警備スタッフ募集" />
+  <meta property="og:description" content="有限会社ドルフィンの採用情報ページ。交通誘導警備やイベント警備スタッフの募集要項、仕事内容、応募方法などをご紹介します。" />
   <?php elseif (is_page("contact")) : ?>
   <title>お問い合わせ | 有限会社ドルフィン - ご依頼やお見積り、採用等に関するお問い合わせはこちら</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンのお問い合わせページ。交通誘導警備やイベント警備に関するご質問、採用のご相談などお気軽にお問い合わせください。"
-  />
+  <meta name="description" content="有限会社ドルフィンのお問い合わせページ。交通誘導警備やイベント警備に関するご質問、採用のご相談などお気軽にお問い合わせください。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="お問い合わせ | 有限会社ドルフィン - ご依頼やお見積り、採用等に関するお問い合わせはこちら" />
+  <meta property="og:description" content="有限会社ドルフィンのお問い合わせページ。交通誘導警備やイベント警備に関するご質問、採用のご相談などお気軽にお問い合わせください。" />
   <?php elseif (is_page("entry")) : ?>
   <title>採用エントリーフォーム | 有限会社ドルフィン - 交通誘導・イベント警備の応募はこちら</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンの採用エントリーフォームページ。交通誘導警備やイベント警備スタッフの応募はこちらから。簡単なフォーム入力でエントリーできます。"
-  />
+  <meta name="description" content="有限会社ドルフィンの採用エントリーフォームページ。交通誘導警備やイベント警備スタッフの応募はこちらから。簡単なフォーム入力でエントリーできます。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="採用エントリーフォーム | 有限会社ドルフィン - 交通誘導・イベント警備の応募はこちら" />
+  <meta property="og:description" content="有限会社ドルフィンの採用エントリーフォームページ。交通誘導警備やイベント警備スタッフの応募はこちらから。簡単なフォーム入力でエントリーできます。" />
   <?php elseif (is_page("privacy")) : ?>
   <title>プライバシーポリシー | 有限会社ドルフィン - 個人情報の取り扱いについて</title>
-  <meta
-    name="description"
-    content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。"
-  />
+  <meta name="description" content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="プライバシーポリシー | 有限会社ドルフィン - 個人情報の取り扱いについて" />
+  <meta property="og:description" content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。" />
+  <?php elseif (is_single()) : ?>
+  <title><?php echo esc_html(get_the_title()); ?> | 有限会社ドルフィン</title>
+  <meta name="description" content="<?php echo esc_attr(get_the_excerpt() ?: '有限会社ドルフィンのブログ記事です。交通誘導警備やイベント警備に関する有益な情報をお届けします。'); ?>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="<?php echo esc_html(get_the_title()); ?>" />
+  <meta property="og:description" content="<?php echo esc_attr(get_the_excerpt() ?: '有限会社ドルフィンのブログ記事です。交通誘導警備やイベント警備に関する有益な情報をお届けします。'); ?>" />
   <?php elseif (is_404()) : ?>
   <title>ページが見つかりません | 有限会社ドルフィン</title>
-  <meta
-  name="description"
-  content="お探しのページが見つかりません。有限会社ドルフィンのサイトマップやトップページから目的のページをお探しください。"
-  />
+  <meta name="description" content="お探しのページが見つかりません。有限会社ドルフィンのサイトマップやトップページから目的のページをお探しください。"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ページが見つかりません | 有限会社ドルフィン" />
+  <meta property="og:description" content="お探しのページが見つかりません。有限会社ドルフィンのサイトマップやトップページから目的のページをお探しください。" />
   <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.ico"); ?>" type="image/x-icon" />
@@ -83,17 +89,13 @@
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon-192x192.png"); ?>" type="image/png" />
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.svg"); ?>" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/apple-touch-icon.png"); ?>" />
+
   <meta property="og:site_name" content="有限会社ドルフィン" />
   <meta
     property="og:url"
     content="<?php echo esc_url(get_permalink()); ?>"
   />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="有限会社ドルフィン | 千葉県市川市の交通誘導警備・イベント警備" />
-  <meta
-    property="og:description"
-    content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。"
-  />
+
   <meta
     property="og:image"
     content="<?php echo esc_url(get_the_post_thumbnail_url(null, 'large') ?: 'https://dolphin-security.com/wp-content/uploads/2025/01/top_kv_img01.jpg'); ?>"
