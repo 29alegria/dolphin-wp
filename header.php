@@ -28,13 +28,13 @@
     name="description"
     content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。"
   />
-  <?php elseif (is_page("history")) : ?>
+  <?php elseif (is_page("training")) : ?>
   <title>研修 | 有限会社ドルフィン - 安全と信頼を育む教育プログラム</title>
   <meta
     name="description"
     content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。"
   />
-  <?php elseif (is_page("history")) : ?>
+  <?php elseif (is_page("philosophy")) : ?>
   <title>企業理念・行動指針 | 有限会社ドルフィン - 信頼と安全を追求する企業姿勢</title>
   <meta
     name="description"
@@ -58,19 +58,19 @@
     name="description"
     content="有限会社ドルフィンのお問い合わせページ。交通誘導警備やイベント警備に関するご質問、採用のご相談などお気軽にお問い合わせください。"
   />
-  <?php elseif (is_page("contact")) : ?>
+  <?php elseif (is_page("entry")) : ?>
   <title>採用エントリーフォーム | 有限会社ドルフィン - 交通誘導・イベント警備の応募はこちら</title>
   <meta
     name="description"
     content="有限会社ドルフィンの採用エントリーフォームページ。交通誘導警備やイベント警備スタッフの応募はこちらから。簡単なフォーム入力でエントリーできます。"
   />
-  <?php elseif (is_page("contact")) : ?>
+  <?php elseif (is_page("privacy")) : ?>
   <title>プライバシーポリシー | 有限会社ドルフィン - 個人情報の取り扱いについて</title>
   <meta
     name="description"
     content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。"
   />
-  <?php elseif (is_page("contact")) : ?>
+  <?php elseif (is_404()) : ?>
   <title>ページが見つかりません | 有限会社ドルフィン</title>
   <meta
   name="description"
@@ -78,13 +78,11 @@
   />
   <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
-  <!-- favicon/web-clip-icon -->
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.ico"); ?>" type="image/x-icon" />
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon-32x32.png"); ?>" type="image/png" />
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon-192x192.png"); ?>" type="image/png" />
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/favicon.svg"); ?>" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="<?php echo esc_url(get_template_directory_uri() . "/assets/images/apple-touch-icon.png"); ?>" />
-  <!-- ogp -->
   <meta property="og:site_name" content="有限会社ドルフィン" />
   <meta
     property="og:url"
@@ -100,6 +98,7 @@
     property="og:image"
     content="<?php echo esc_url(get_the_post_thumbnail_url(null, 'large') ?: 'https://dolphin-security.com/wp-content/uploads/2025/01/top_kv_img01.jpg'); ?>"
   />
+
   <meta property="og:locale" content="ja_JP" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta
