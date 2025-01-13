@@ -88,7 +88,7 @@
   <meta property="og:site_name" content="有限会社ドルフィン" />
   <meta
     property="og:url"
-    content=""
+    content="<?php echo esc_url(get_permalink()); ?>"
   />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="有限会社ドルフィン | 千葉県市川市の交通誘導警備・イベント警備" />
@@ -98,9 +98,8 @@
   />
   <meta
     property="og:image"
-    content=""
+    content="<?php echo esc_url(get_the_post_thumbnail_url(null, 'large') ?: 'https://dolphin-security.com/wp-content/uploads/2025/01/top_kv_img01.jpg'); ?>"
   />
-  <!--  -->
   <meta property="og:locale" content="ja_JP" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta
