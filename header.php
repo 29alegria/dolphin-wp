@@ -109,7 +109,7 @@
   />
   <meta
     name="twitter:image:src"
-    content=""
+    content="<?php echo esc_url(get_the_post_thumbnail_url(null, 'large') ?: 'https://dolphin-security.com/wp-content/uploads/2025/01/top_kv_img01.jpg'); ?>"
   />
   <?php wp_head(); ?>
 </head>
