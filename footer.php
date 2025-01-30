@@ -2,12 +2,12 @@
     <div class="l_container-lg">
       <div class="l_footer_info">
         <div class="l_footer_info_contents">
-          <h1 class="l_footer-logo">
+          <p class="l_footer-logo">
             <a href="<?php echo esc_url(home_url()); ?>" class="l_footer-logo_link">
               <img src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>" alt="会社ロゴ" class="l_footer-logo_icon" width="403" height="403">
               <span class="l_footer-logo_txt">有限会社ドルフィン</span>
             </a>
-          </h1>
+          </p>
           <p class="l_footer_address">
             〒272-0021<br
             />千葉県市川市八幡3-27-8 2F

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /category/security/
+Disallow: /category/work/
+Disallow: /?s=
+Disallow: /author/dolphin/
+Disallow: /feed/
+Disallow: /*/feed/
