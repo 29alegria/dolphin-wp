@@ -10,30 +10,35 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="有限会社ドルフィン | 千葉県市川市の交通誘導警備・イベント警備" />
   <meta property="og:description" content="千葉県市川市を中心に、交通誘導警備やイベント警備を提供する警備会社。信頼と安全を届ける警備のプロフェッショナルです。" />
+  <link rel="canonical" href="https://dolphin-security.com/" />
   <?php elseif (is_page("service")) : ?>
   <title>事業内容 | 有限会社ドルフィン - 千葉県市川市の交通誘導警備・イベント警備</title>
   <meta name="description" content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。"/>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="事業内容 | 有限会社ドルフィン - 千葉県市川市の交通誘導警備・イベント警備" />
   <meta property="og:description" content="有限会社ドルフィンの事業内容をご紹介します。交通誘導警備やイベント警備を中心に、安全と信頼を提供する警備サービスを展開しています。" />
+  <link rel="canonical" href="https://dolphin-security.com/service/" />
   <?php elseif (is_page("about")) : ?>
   <title>会社情報 | 有限会社ドルフィン - 基本情報と主要取引先</title>
   <meta name="description" content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。"/>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="会社情報 | 有限会社ドルフィン - 基本情報と主要取引先" />
   <meta property="og:description" content="有限会社ドルフィンの会社情報ページ。会社概要、所在地、連絡先、主要取引先など、当社の基本情報をご覧いただけます。" />
+  <link rel="canonical" href="https://dolphin-security.com/about/" />
   <?php elseif (is_page("history")) : ?>
   <title>沿革 | 有限会社ドルフィン - 会社の歴史と成長の歩み・実績</title>
   <meta name="description" content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。"/>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="沿革 | 有限会社ドルフィン - 会社の歴史と成長の歩み・実績" />
   <meta property="og:description" content="有限会社ドルフィンの沿革ページ。創業から現在までの歴史や成長の歩み・実績を詳しくご紹介します。" />
+  <link rel="canonical" href="https://dolphin-security.com/history/" />
   <?php elseif (is_page("training")) : ?>
   <title>研修 | 有限会社ドルフィン - 安全と信頼を育む教育プログラム</title>
   <meta name="description" content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。"/>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="研修 | 有限会社ドルフィン - 安全と信頼を育む教育プログラム" />
   <meta property="og:description" content="有限会社ドルフィンの研修ページ。交通誘導警備やイベント警備の現場で必要な知識や技術を育む充実した教育プログラムについてご紹介します。" />
+  <link rel="canonical" href="https://dolphin-security.com/training/" />
   <?php elseif (is_page("philosophy")) : ?>
   <title>企業理念・行動指針 | 有限会社ドルフィン - 信頼と安全を追求する企業姿勢</title>
   <meta name="description" content="有限会社ドルフィンの企業理念・行動指針ページ。信頼と安全を基本とした企業姿勢や、社会に貢献するための行動基準をご紹介します。"/>
@@ -46,6 +51,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="ブログ一覧 | 有限会社ドルフィン - 警備に関するお役立ち情報や先輩隊員の声" />
   <meta property="og:description" content="有限会社ドルフィンのブログ一覧ページ。交通誘導警備やイベント警備のお役立ち情報に加え、現場で活躍する先輩隊員の声をご紹介します。" />
+  <link rel="canonical" href="https://dolphin-security.com/blog/" />
   <?php elseif (is_page("recruit")) : ?>
   <title>採用情報 | 有限会社ドルフィン - 交通誘導警備・イベント警備スタッフ募集</title>
   <meta name="description" content="有限会社ドルフィンの採用情報ページ。交通誘導警備やイベント警備スタッフの募集要項、仕事内容、応募方法などをご紹介します。"/>
@@ -58,18 +64,21 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="お問い合わせ | 有限会社ドルフィン - ご依頼やお見積り、採用等に関するお問い合わせはこちら" />
   <meta property="og:description" content="有限会社ドルフィンのお問い合わせページ。交通誘導警備やイベント警備に関するご質問、採用のご相談などお気軽にお問い合わせください。" />
+  <link rel="canonical" href="https://dolphin-security.com/contact/" />
   <?php elseif (is_page("entry")) : ?>
   <title>採用エントリーフォーム | 有限会社ドルフィン - 交通誘導・イベント警備の応募はこちら</title>
   <meta name="description" content="有限会社ドルフィンの採用エントリーフォームページ。交通誘導警備やイベント警備スタッフの応募はこちらから。簡単なフォーム入力でエントリーできます。"/>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="採用エントリーフォーム | 有限会社ドルフィン - 交通誘導・イベント警備の応募はこちら" />
   <meta property="og:description" content="有限会社ドルフィンの採用エントリーフォームページ。交通誘導警備やイベント警備スタッフの応募はこちらから。簡単なフォーム入力でエントリーできます。" />
+  <link rel="canonical" href="https://dolphin-security.com/entry/" />
   <?php elseif (is_page("privacy")) : ?>
   <title>プライバシーポリシー | 有限会社ドルフィン - 個人情報の取り扱いについて</title>
   <meta name="description" content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。"/>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="プライバシーポリシー | 有限会社ドルフィン - 個人情報の取り扱いについて" />
   <meta property="og:description" content="有限会社ドルフィンのプライバシーポリシーページ。個人情報の利用目的、保護方針、管理体制についての詳細をご説明します。" />
+  <link rel="canonical" href="https://dolphin-security.com/privacy/" />
   <?php elseif (is_single()) : ?>
   <title><?php echo esc_html(get_the_title()); ?> | 有限会社ドルフィン</title>
   <meta name="description" content="<?php echo esc_attr(get_the_excerpt() ?: '有限会社ドルフィンのブログ記事です。交通誘導警備やイベント警備に関する有益な情報をお届けします。'); ?>" />
