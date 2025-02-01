@@ -291,7 +291,7 @@ if (have_posts()) :
             
           <!-- ３０ -->
           <div class="history_info-box">
-            <h3 class="history_title">平成17年</h3>
+            <h3 class="history_title">平成30年</h3>
             <table class="history-info">
               <tr>
                 <th>5月</th>
