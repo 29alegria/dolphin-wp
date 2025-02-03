@@ -52,8 +52,8 @@ if (have_posts()) :
           <h2 class="privacy_title">7.お問い合わせ窓口</h2>
           <p class="privacy_txt">当社の個人情報保護方針に関するお問い合わせは、以下の窓口までご連絡ください。<br>
             【お問い合わせ窓口】<br>
-            電話番号: <br>
-            メールアドレス: 
+            電話番号: 047-329-4455<br>
+            メールアドレス: dolphinsecurity@circus.ocn.ne.jp
           </p>
         </div>
         <!-- /.privacy_content -->
