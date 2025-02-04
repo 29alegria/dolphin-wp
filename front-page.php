@@ -12,13 +12,13 @@
         </p>
       </div>
       <!-- /.top_kv_box -->
-      <div class="top_kv_arrow">
+      <!-- <div class="top_kv_arrow">
         <div class="m_arrow-wrapper">
           <div class="m_arrow__round">
             <div class="m_arrow m_arrow__bottom"></div>
           </div>            
         </div>        
-      </div>
+      </div> -->
       <!-- /.top_kv_arrow -->
     </div>
     <!-- /.top_kv-inner -->
