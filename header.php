@@ -125,7 +125,7 @@
 <body class="js_body">
 <?php if(is_front_page()) : ?>
   <div class="m_opening js_opening">
-    <div class="m_opening_content">
+    <div class="m_opening_content js_opening_content">
       <div class="m_opening_logo-wrapper js_opening-logo">
         <img
           src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/dolphin-icon.svg"); ?>"

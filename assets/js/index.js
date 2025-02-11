@@ -4,16 +4,16 @@ function openingAnime() {
   body.classList.toggle("is-active");
 
   gsap.timeline()
-    .from(".js_opening-logo", {
-      duration: 2,
-      autoAlpha: 0,
-      y: 40,
-    })
-    .to(".js_opening-logo", {
-      duration: 0.6,
-      scale: 0.8,
-      y: 40,
-    })
+    // .from(".js_opening-logo", {
+    //   duration: 2,
+    //   autoAlpha: 0,
+    //   y: 40,
+    // })
+    // .to(".js_opening-logo", {
+    //   duration: 0.6,
+    //   scale: 0.8,
+    //   y: 40,
+    // })
     // .to(".js_opening-logo", {
     //   duration: 0.6,
     //   y: -8, // 上に移動
@@ -21,7 +21,12 @@ function openingAnime() {
     //   repeat: -1, // 無限ループ
     //   ease: "power1.inOut", // スムーズなバウンド効果
     // } ,"<")
-    .from(".js_opening-txt", {
+    // .from(".js_opening-txt", {
+    //   duration: 2,
+    //   autoAlpha: 0,
+    //   y: 40,
+    // })
+    .from(".js_opening_content", {
       duration: 2,
       autoAlpha: 0,
       y: 40,
